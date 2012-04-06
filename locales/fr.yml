@@ -1,0 +1,11 @@
+---
+fr:
+  follow_notch_0x10cc: "Suivez <a href = \"https://twitter.com/notch\">@notch</a> et <a :href = \"https://twitter.com/0x10cc\">@0x10cc</a> sur Twitter."
+  follow_me: "Vous pouvez aussi suivre <a href = \"https://twitter.com/Mayeu\">@Mayeu</a> le mec qui a créé cette page :)"
+  about_this_page: "À propos de cette page"
+  unofficial_faq: "Cette page est une FAQ non officiel et n'est en aucun cas affiliée à Notch ou Mojang."
+  link_to_source: "Toute les réponses sont accompagné d'un lien vers la source où j'ai obtenue l'information."
+  warning_change: "Enfin, gardez à l'esprit que toutes ces réponses ne sont valable que dans l'état actuel du projet (encore loin de l'alpha). Tout élément est suceptible de changer n'importe quand."
+  last_5_questions: "Les 5 dernières questions"
+  link: "Lien : "
+  links: "Liens : "

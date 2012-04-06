@@ -1,0 +1,366 @@
+---
+- question: Existe il un back-end pour LLVM pour le DCPU-16 ?
+  answer: Je crois que quelqu'un travaille dessus ! Personnellement j'ai écris mon propre petit assembleur, il n'est pas parfait mais je l'aime bien.
+  links:
+  - url: https://twitter.com/#!/notch/status/187447412015632385
+    link_name: Twitter
+  title_id: 6
+- question: Il n'y a pas d'interruptions ? Ou alors j'ai loupé quelque chose ?
+  answer: Je n'aime pas les interruptions! Je pense implementer une jolie petite message-queue à la place.
+  links:
+  - url: https://twitter.com/#!/notch/status/187448370107912192
+    link_name: Twitter
+  title_id: 6
+- question: Existe il déjà un compilateur ?
+  answer: Non
+  links:
+  - url: https://twitter.com/#!/notch/status/187448576505413632
+    link_name: Twitter
+  title_id: 6
+- question: Pour les instructions de langage qu'y prennent plusieurs cycles à s'exécuter, je peux assumer qu'il n'y à pas de modification de valeur avant la fin des cycles ?
+  answer: Pour que l'émulation soit efficace la valeur est en faite modifié avant de déduire le nombre de cycle. Ils ne sont réaliser qu'après modifications.
+  links:
+  - url: https://twitter.com/#!/notch/status/187449161216573441
+    link_name: Twitter
+  title_id: 6
+- question: Quelle sont les spécifications pour les entrée/sortie (I/O) ?
+  answer: Je ne suis pas allé aussi loin encore. Je pense mettre en place une message-queue accessible ne mémoire. surement.
+  links:
+  - url: https://twitter.com/#!/notch/status/187453108522205184
+    link_name: Twitter
+  title_id: 6
+- question: Il n'y a pas d'instruction "ADD avec retenue" -- ou plus exactement, ce que tu appelles ADD devrais étre ADC vu qu'il prende en compte la retenue implicitement.
+  answer: ADD stock la retenue dans le registre O, mais ne l'utilise pas. Tu dois l'appliquer manuellement avec ADD &lt;dest&gt; O
+  links:
+  - url: https://twitter.com/#!/notch/status/187454603909009408
+    link_name: Twitter
+  title_id: 6
+- question: ! "Lorsque l'émulateur rencontre une instruction du type 'x: est pc, x', est ce qu'il se retrouve en boucle infinie, ou est il optimizer pour arréter l'émulation ?"
+  answer: Il boucle, l'émulateur ne tente pas de résoudre le problème d'arrets des algorithmes ;)
+  links:
+  - url: https://twitter.com/#!/notch/status/187460507979091968
+    link_name: Twitter
+  title_id: 6
+- question: Pas de pipeline dans le CPU ?
+  answer: Non, je dois faire des sacrifices pour conserver une bonne vitesse d'émulation.
+  links:
+  - url: https://twitter.com/#!/notch/status/187474398243074048
+    link_name: Twitter
+  title_id: 6
+- question: Que contient le registre 0 après "DIV x, 0" (ici c'est le chiffre zéro) quand sont contenue est équivalent à 0x1000 ou n'importe quoi de plus grand ?
+  answer: 0
+  links:
+  - url: https://twitter.com/#!/notch/status/187567134824607744
+    link_name: Twitter
+  title_id: 6
+- question: L'histoire de 0x10c dis que le DCPU-16 est little-endian, mais tes spécifications répresente du big-endian.
+  answer: Ben, oops ! :D
+  links:
+  - url: https://twitter.com/#!/notch/status/187596789304655874
+    link_name: Twitter
+  title_id: 6
+- question: Quel est le déroulement du boot du DCPU-16 ? Les registres ont ils certaines valeurs ? Tu impliques que SP démarre à 0xffff apparement.
+  answer: SP démarre à 0 et un premier PUSH est réalisé pour faire --SP, qui donne 0xffff. Tout le reste démarre à 0.
+  links:
+  - url: https://twitter.com/#!/notch/status/187637515941978114
+    link_name: Twitter
+  title_id: 6
+- question: Quelle est la vitesse du CPU ?
+  answer: Je vise les 100khz pour l'instant
+  links:
+  - url: https://twitter.com/#!/notch/status/187448902314762240
+    link_name: Twitter
+  title_id: 4
+- question: Serai-je capable de programmer un logiciel avec une GUI qui pourras tracer des IPs avec ton processor 16 bits ?
+  answer: Bien sur !
+  links:
+  - url: https://twitter.com/#!/notch/status/187426146290372608
+    link_name: Twitter
+  title_id: 4
+- question: Les CPUs seront capable de se connecter entre eux en utilisant un réseau in-game ?
+  answer: 'Oui'
+  links:
+  - url: https://twitter.com/#!/notch/status/187445818616320000
+    link_name: Twitter
+  title_id: 4
+- question: Est-ce-qu'il éxisteras d'autre OS avec des langages de haut niveaux ?
+  answer: Les joueurs devront créer leur propre OS pour ça ;)
+  links:
+  - url: https://twitter.com/#!/notch/status/187451454066397184
+    link_name: Twitter
+  title_id: 4
+- question: Les joueurs pourront ils envoyer du code malicieux qui affecteras négativement les vaisseau adverse ?
+  answer: Oui, les ordinateurs fonctionne comme les notres :)
+  links:
+  - url: https://twitter.com/#!/notch/status/187451555384004610
+    link_name: Twitter
+  title_id: 4
+- question: Comment les programmes seront chargé dans la mémoire du DCPU-16 ?
+  answer: Quelqu'un devras écrire un loader ;) Il y auras des disquettes dans le jeu pour ceux qui aime les artefacts, ou un réseau radio.
+  links:
+  - url: https://twitter.com/#!/notch/status/187452068141875200
+    link_name: Twitter
+  title_id: 4
+- question: Est-ce-que tu penses faire quelque chose comme un magasin pour les programmes ?
+  answer: Absolument. Les joueurs pourront aussi créer les leurs.
+  links:
+  - url: https://twitter.com/#!/notch/status/187452239344967680
+    link_name: Twitter
+  title_id: 4
+- question: Serai-je capable de jouer à Doom sur l'ordinateur pendant que je minerais les asteroides ?
+  answer: En quelque sorte, oui.
+  links:
+  - url: https://twitter.com/#!/notch/status/187453951619248128
+    link_name: Twitter
+  title_id: 4
+- question: À propos de l'ordinateur de bord ?
+  answer: Dans ce jeu l'ordinateur de bord seras entièrement simulable et programmable en utilisant un langage d'assemblage. Les spécifications du CPU sont disponible <a href="http://0x10c.com/doc/dcpu-16.txt">ici</a>.
+  links:
+  - url: http://0x10c.com
+    link_name: 0x10c.com
+  title_id: 3
+- question: À propos du CPU ?
+  answer: Le nom du CPU est DCPU-16 et c'est un processeur 16 bits.
+  links:
+  - url: http://0x10c.com
+    link_name: 0x10c.com
+  title_id: 3
+- question: Ça ressemble quand même à un gros de nerd, sera-t'il appréciable pour le commun du mortel ? (i.e. les personnes ne sachant pas coder)
+    people that do not know how to code)
+  answer: Je l'espère oui :)
+  links:
+  - url: https://twitter.com/#!/notch/status/187445749200601088
+    link_name: Twitter
+  title_id: 3
+- question: Pourrai-je utiliser des programmes écris par quelqu'un d'autres ?
+  answer: 'Yes'
+  links:
+  - url: https://twitter.com/#!/notch/status/187450717211066369
+    link_name: Twitter
+  title_id: 3
+- question: Il y aura d'autre CPU que le DCPU-16 en jeu ?
+  answer: C'est pour l'instant le seul CPU.
+  links:
+  - url: https://twitter.com/#!/notch/status/187451454066397184
+    link_name: Twitter
+  title_id: 3
+- question: Comment arrêteras tu les virus et autres code malicieux ?
+  answer: Je ne les arrêterai pas, les joueurs devront le faire eux même.
+  links:
+  - url: https://twitter.com/#!/notch/status/187474819980328962
+    link_name: Twitter
+  title_id: 3
+- question: Est-ce-que l'ordinateur virtuel seras un gros élément du jeu ? Ou est-ce que les gens peu abile en programmation pourront jouer au jeu ?
+  answer: Une fois que des logiciels seront accessible en jeu, l'ordinateur sera utilisable comme n'importe quels ordinateurs réels.
+  links:
+  - url: https://twitter.com/#!/notch/status/187475832078483456
+    link_name: Twitter
+  title_id: 3
+- question: Le DCPU pourra controler les communications ? Je pense traitement distribué, P2P, réseau centralisé, contrôle distant de vaisseau, cyber-guerre, etc.
+  answer: C'est l'idée oui !
+  links:
+  - url: https://twitter.com/#!/notch/status/187662131779473409
+    link_name: Twitter
+  title_id: 3
+- question: Le vaisseau aura-t-il plusieurs CPU intégré ?
+  answer: Oui, je vise 3 CPUs comme étant un nombre résonnable.
+  links:
+  - url: https://twitter.com/#!/notch/status/187665962177273857
+    link_name: Twitter
+  title_id: 3
+- question: Quel type de jeu est 0x10c?
+  answer: 0x10<sup>c</sup> est une simulation spatiale Elite-like. Vous serez capable de commercer, vous battres, vider les épaves, miner, etc. Le tout dans un univers proche de la destruction.
+  links:
+  - url: http://0x10c.com/
+    link_name: 0x10c.com
+  title_id: 1
+- question: Quelle est l'histoire ?
+  answer: Dans un univers parallèle, la course à l'espace ne c'est jamais arrétée. Les
+     voyages dans l'espace ont gagné en popularité chez les corporations et les individus
+     riches.<br/>En 1988, de nouvelles cellules de sommeil prolongé, compatible avec
+     les processeurs 16 bits populaires de l'époque, sont créées. Malheureusement, elles
+     utilisais un format big-endian alors que le DCPU-16 nécessitais du little-endian.
+     Cette erreur menas à un bug dans le driver, menant à considérer un sommeil de
+     <code>0x0000 0000 0000 0001</code> année à durer <code>0x0001 0000 0000 0000</code>
+     années.<br/>Nous somme maintenant en 281 474 976 712 644 après J.C, et les première
+     personne perdu commence à se réveiller dans un univres proche de l'extinction; toutes
+     les galaxie perdu à jamais suite au redshift, plus aucunes étoiles ne se forme, et
+     l'univers est dominé par les trous noirs supermassifs.
+  links:
+  - url: http://0x10c.com/
+    link_name: 0x10c.com
+  title_id: 1
+- question: Que pourrais-je faire ?
+  answer: <ul><li>Beaucoup d'ingénieurie.</li>
+    <li>Ordinateur entièrement fonctionnel</li>
+    <li>Bataille contre des AIs ou joueurs</li>
+    <li>Exploration de ruine, vaisseau abondonné</li>
+    <li>Duct tape !!</li>
+    <li>Atterissage sur les planêtes sans heurt.</li>
+    <li>Économie avancé.</li>
+    <li>Rencontre aléatoire.</li>
+    <li>Minage, commerce et loot. </li>
+    <li>Solo et multiplayer connecté au multivers.</li>
+    </ul>
+  links:
+  - url: http://0x10c.com
+    link_name: 0x10c.com
+  title_id: 1
+- question: À quel prix seras le jeu ?
+  answer: Le prix n'est pas décider encore. Mais l'accès au multivers nécessiteras surement un abonnement, étant donné que même non connecté il faudras continuer de simuler l'ordinateur et calculer les trajectoires du joueur.
+  links:
+  - url: http://0x10c.com
+    link_name: 0x10c.com
+  title_id: 1
+- question: Quuuooooooiiiiii ? Un abonnement ? Mais, mais, mais le futur c'est le free-2-paly mec !
+  answer: Le free-2-play est une arnaque.
+  links:
+  - url: https://twitter.com/#!/notch/status/187298042087604224
+    link_name: Twitter
+  title_id: 1
+- question: Pourquoi avoir annoncer l'abonnements si tôt ? J'aurais préférer rester dans mon illusion d'un monde tout gratuit :'(
+  answer: Pour que les mauvaises nouvelles sois dites le plus tôt possible.
+  links:
+  - url: https://twitter.com/#!/notch/status/187446935106502656
+    link_name: Twitter
+  title_id: 1
+- question: Est-ce-qu'il y aura un cycle alpha/beta accessible à la Minecraft?
+  answer: Oui
+  links:
+  - url: https://twitter.com/#!/Capp00/status/187282914386526208
+    link_name: Twitter
+  title_id: 1
+- question: À propos du logo ?
+  answer: Le logo est rendu à l'aide du prototype de moteur de jeu actuel.
+  links:
+  - url: https://twitter.com/#!/notch/status/187297023429586945
+    link_name: Twitter
+  title_id: 1
+- question: Sera-t-il possible de monter un server pour 0x10c ou est-ce-qu'il n'y auras qu'un seul gros serveur ?
+  answer: Je ne sais pas encore !
+  links:
+  - url: https://twitter.com/#!/notch/status/187447546329829376
+    link_name: Twitter
+  title_id: 1
+- question: Pourras t'on créer son propre vaisseau ?
+  answer: Oui
+  links:
+  - url: https://twitter.com/#!/notch/status/187453476362657793
+    link_name: Twitter
+  title_id: 1
+- question: Mes amis et moi pourrons être l'équipage d'un seul vaisseau ?
+  answer: Oui
+  links:
+  - url: https://twitter.com/#!/notch/status/187453524634902528
+    link_name: Twitter
+  title_id: 1
+- question: Le jeu sera-t-il accessible pour l'apprentissage (sous-entendu assembleur/informatique) ?
+  answer: Je l'espère.
+  links:
+  - url: https://twitter.com/#!/notch/status/187453888662745088
+    link_name: Twitter
+  title_id: 1
+- question: Y'auras t'il différent race dans le jeu ? Et si oui pourront elle interagir de manière intime ?
+  answer: Hummm... en terme d'evolution, c'est hautement impropable.
+  links:
+  - url: https://twitter.com/#!/notch/status/187460269667123200
+    link_name: Twitter
+  title_id: 1
+- question: Quelle seront les aspect disponible pour l'ingénieurie ? Réparation de la coque, moteur, etc. Est-ce-que la maintenance mécanique auras une courbe d'apprentissage bien raides ?
+  answer: J'espère bien oui. Pour des raisons de gameplay tout pourras être réparé temporairement avec du duct tape.
+  links:
+  - url: https://twitter.com/#!/notch/status/187461075577470976
+    link_name: Twitter
+  title_id: 1
+- question: À propos du gameplay autours des planètes ?
+  answer: Il y auras un gameplay autours des planètes.
+  links:
+  - url: https://twitter.com/#!/notch/status/187666854800670721
+    link_name: Twitter
+  title_id: 1
+- question: 0x10c supporteras l'Unicode?
+  answer: Oui, mais le DCPU-16 non.
+  links:
+  - url: https://twitter.com/#!/notch/status/187668308043108353
+    link_name: Twitter
+  title_id: 1
+- question: Quel type de graphisme auras le jeu ? Réalistique à la EVE ?
+  answer: Des graphismes simple. Très simple.
+  links:
+  - url: https://twitter.com/#!/notch/status/187451321966788608
+    link_name: Twitter
+  title_id: 2
+- question: Le jeu auras t'il un point de vue à la première personne ou seras t'il possible de zoomer hors du vaisseu ?
+  answer: Première personne à l'intérieur du vaisseau.
+  links:
+  - url: https://twitter.com/#!/notch/status/187451691040382976
+    link_name: Twitter
+  title_id: 2
+- question: As tu décider le type de graphisme ? 2D, 3D, texte, isometrique, ou est-ce toujours un point à discuter ?
+  answer: J'ai plus ou moins décidé oui.
+  links:
+  - url: https://twitter.com/#!/notch/status/187475905382334464
+    link_name: Twitter
+  title_id: 2
+- question: Est-ce-que la physique des luimères seras réaliste ? Cela devrais être nécessaire pour un jeu de SF dure.
+  answer: Si tu parles de l'effet de lentille gravitationnel, j'y compte bien. Si cela colle au style visuel.
+  links:
+  - url: https://twitter.com/#!/notch/status/187454250547294208
+    link_name: Twitter
+  title_id: 5
+- question: Je pensais principalement au lag entre la lumière émise et la lumière touchant le vaisseau et les capteurs.
+  answer: Je vais faire des concessions pour le gameplay. Ça ne serais pas 100% juste, mais pas non plus totalement irréel.
+  links:
+  - url: https://twitter.com/#!/notch/status/187454898189774848
+    link_name: Twitter
+  title_id: 5
+- question: Donc 2 ou 3 sur 10 dans l'échelle de dureté ?
+  answer: Ça dépends de l'échelle. Sur <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/MohsScaleOfScienceFictionHardness">celle ci</a>, à peu près 4.
+  links:
+  - url: https://twitter.com/#!/notch/status/187456074956279808
+    link_name: Twitter
+  title_id: 5
+- question: Si je coupe les moteurs de mon vaisseau, me mettrais-je à orbiter et/ou dérivé ?
+  answer: Oui.
+  links:
+  - url: https://twitter.com/#!/notch/status/187473646267277312
+    link_name: Twitter
+  title_id: 5
+- question: Est-ce que 0x10c comporteras les notions de gravité, calcule relatif, écologie planètaire ?
+  answer: Oui pour le premier, il est possible que je rende le temps non relatif pour des raisons de gameplay. L'écologie, peut-être... la vie seras presque entièrement morte.
+  links:
+  - url: https://twitter.com/#!/notch/status/187842817425543168
+    link_name: Twitter
+  title_id: 5
+- question: Quelle seras la densité des disquettes dans 0x10c?
+  answer: Pour l'instant 1.44Mo 3½ pouces
+  links:
+  - url: https://twitter.com/#!/notch/status/187852568318312448
+    link_name: Twitter
+  title_id: 3
+- question: Les spécifications du DCPU-16 précise un nombre de cycles pour certaines opérations, cela veux dire que la réalisation d'émulateurs optimisé est impossible ?
+  answer: Tu peux faire ce que tu veux à ce propos, mais le jeu suivras les spécifications.
+  links:
+  - url: https://twitter.com/#!/notch/status/187900363469373442
+    link_name: Twitter
+  title_id: 6
+- question: Tu peux élaboré "le free-2-play est une arnaque" 
+  answer: Oui, l'arnaque est juste là, dans le nom. Ce n'est pas gratuit. Les dévellopeurs font plus d'argents avec le "free to play".
+  links:
+  - url: https://twitter.com/#!/notch/status/187901649409421312
+    link_name: Twitter
+  title_id: 1
+- question: Pour clarifier "aterrissage sur une planète sans heurt", cela veux dire qu'il n'y auras pas d'écran de chargement ?
+  answer: 'Oui'
+  links:
+  - url: https://twitter.com/#!/notch/status/187945752742473728
+    link_name: Twitter
+  title_id: 5
+- question: Que se passe t'il quand on meurt dans le jeu ?
+  answer: Mourir dans le jeu veux dire que toi (et ton vaisseau) respawneront. Immortalité Quantique ! Tu vivras dans un univers parallèle qui seras éxactement le même (ormis que tu n'y es jamais mort).
+  links:
+  - url: https://twitter.com/#!/notch/status/188223238164332544
+    link_name: Twitter
+  - url: https://twitter.com/#!/notch/status/188224386032082945
+    link_name: Twitter
+  title_id: 1
