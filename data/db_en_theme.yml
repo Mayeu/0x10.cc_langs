@@ -1,13 +1,13 @@
 ---
 - id: 1
-  title: The game
+  title: Das Spiel
 - id: 2
-  title: The graphics
+  title: Die Grafik
 - id: 3
-  title: The computer
+  title: Der Computer
 - id: 4
-  title: Capability of the computer
+  title: Leistungsfähigkeit des Computers
 - id: 5
-  title: Space, hardness, and physics related
+  title: Weltall, Schwierigkeitsgrad und Physik-Bezug
 - id: 6
-  title: Technically advanced part
+  title: Technisch anspruchsvoller Teil
