@@ -9,6 +9,7 @@ Data contains yaml file representing the Q&A database.
 ### Questions representation
 
 A question have the following field :
+
    - question: My awesome question
      answer: The awesome answer from Notch
      title_id: X
@@ -20,6 +21,7 @@ A question have the following field :
 
 You can have as many url and link name you want.
 The title id should be one of the following number:
+
    1: The game
    2: The graphics
    3: The computer
@@ -35,6 +37,7 @@ order in the file is the order on the website.
 ### Filename
 
 The database file should be named like this:
+
    db_<lang>_question.yml
    db_<lang>_theme.yml
 
@@ -45,4 +48,5 @@ Contains yaml file for translating the fixed content of the website.
 ### Filename
 
 The locales file should be named like this:
+
    <lang>.yml
