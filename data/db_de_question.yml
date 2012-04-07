@@ -27,7 +27,7 @@
   - url: https://twitter.com/#!/notch/status/187449161216573441
     link_name: Twitter
   title_id: 6
-- question: Was sind die E/A-Spezifikationen?
+- question: Wie lauten die E/A-Spezifikationen?
   answer: So weit bin ich noch nicht. Vielleicht eine speicherbasierte Nachrichtenschlange.
   links:
   - url: https://twitter.com/#!/notch/status/187453108522205184
@@ -56,15 +56,15 @@
   - url: https://twitter.com/#!/notch/status/187474398243074048
     link_name: Twitter
   title_id: 6
-- question: Was ist in O nach DIV x, 0, wenn es äquivalent ist zu /0x10000 und /irgendetwas 
-    Grösserem? Ich würde sagen entweder x (/0x10000) oder 0 (/infinity).
+- question: Was ist in O nach DIV x, 0, wenn es äquivalent ist zu 0x10000 und irgendetwas 
+    Grösserem? Ich würde sagen entweder x (0x10000) oder 0 (infinity).
   answer: 0
   links:
   - url: https://twitter.com/#!/notch/status/187567134824607744
     link_name: Twitter
   title_id: 6
-- question: Die 0x10c-Überlieferung spricht von little endian, aber deine Spezifikation
-    beschreibt einen call mit big endian.
+- question: Die 0x10c-Überlieferung spricht von Little Endian, aber deine Spezifikation
+    beschreibt einen call mit Big Endian.
   answer: "Well, oops! :D"
   links:
   - url: https://twitter.com/#!/notch/status/187596789304655874
@@ -91,8 +91,7 @@
   - url: https://twitter.com/#!/notch/status/187426146290372608
     link_name: Twitter
   title_id: 4
-- question: Werden die CPUs fähig sein, sich in-game miteinander zu verbinden in einem
-    Netzwerk?
+- question: Werden die CPUs fähig sein, sich in-game miteinander in einem Netzwerk zu verbinden?
   answer: Ja
   links:
   - url: https://twitter.com/#!/notch/status/187445818616320000
@@ -133,8 +132,7 @@
   title_id: 4
 - question: Wie sieht's aus mit dem Computer des Schiffs?
   answer: Im Spiel, der Computer des Schiffs wird vollständig simuliert und vollständig programmierbar
-    sein, mit Hilfe einer Assemblersprache. Die Spezifikation des Computers ist verfügbar
-    <a href="http://0x10c.com/doc/dcpu-16.txt">hier</a>.
+    sein, mit Hilfe einer Assemblersprache. Die Spezifikation des Computers ist <a href="http://0x10c.com/doc/dcpu-16.txt">hier</a> verfügbar.
   links:
   - url: http://0x10c.com
     link_name: 0x10c.com
@@ -145,7 +143,7 @@
   - url: http://0x10c.com
     link_name: 0x10c.com
   title_id: 3
-- question: Klingt wie ein echt nerdiges Spiel, wird es auch Normalsterbliche
+- question: Klingt wie ein echt Spiel für Nerds. Wird es auch Normalsterbliche
     begeistern können? (z.B. Menschen, die nicht programmieren können?)
   answer: Das hoffe ich natürlich. :)
   links:
@@ -153,12 +151,12 @@
     link_name: Twitter
   title_id: 3
 - question: Wird es möglich sein, die Programme von anderen zu benutzen?
-  answer: Ja
+  answer: Ja.
   links:
   - url: https://twitter.com/#!/notch/status/187450717211066369
     link_name: Twitter
   title_id: 3
-- question: Wird es nur die DCPU-16 geben im Spiel?
+- question: Wird es im Spiel nur die DCPU-16 geben?
   answer: Die DCPU ist die einzige CPU zu diesem Zeitpunkt.
   links:
   - url: https://twitter.com/#!/notch/status/187451454066397184
@@ -216,7 +214,7 @@
     link_name: 0x10c.com
   title_id: 1
 - question: Was werde ich tun können?
-  answer: <ul><li>Viel engineering-Arbeiten</li>
+  answer: <ul><li>Viel Engineering-Arbeiten</li>
     <li>Vollständig funktionales Computersystem.</li>
     <li>Weltraumschlachten gegen eine KI oder andere Spieler.</li>
     <li>Verlassene Schiffe voller Beute.</li>
@@ -239,7 +237,7 @@
   - url: http://0x10c.com
     link_name: 0x10c.com
   title_id: 1
-- question: Waaaaaaaas? MOnatliche Gebühr? Aber, aber, aber, free 2 play ist die Zukunft, dude!
+- question: Waaaaaaaas? Monatliche Gebühr? Aber, aber, aber, free 2 play ist die Zukunft, dude!
   answer: f2p ist ein Beschiss.
   links:
   - url: https://twitter.com/#!/notch/status/187298042087604224
@@ -259,7 +257,7 @@
     link_name: Twitter
   title_id: 1
 - question: Was ist mit dem Logo?
-  answer: Das Logo wird ingame gerendert vom aktuellen Maschinenprototyp.
+  answer: Das Logo wird in-game gerendert vom aktuellen Maschinenprototyp.
   links:
   - url: https://twitter.com/#!/notch/status/187297023429586945
     link_name: Twitter
@@ -311,7 +309,7 @@
   - url: https://twitter.com/#!/notch/status/187666854800670721
     link_name: Twitter
   title_id: 1
-- question: Wird #0x10c Unicode unterstützen?
+- question: Wird 0x10c Unicode unterstützen?
   answer: Ja, aber die DCPU nicht.
   links:
   - url: https://twitter.com/#!/notch/status/187668308043108353
@@ -319,7 +317,7 @@
   title_id: 1
 - question: Wird das Spiel die Perspektive der Person im Schiff haben oder
     wird es ausgezoomt sein?
-  answer: First-person-Perspektive im Schiff.
+  answer: First Person Perspektive im Schiff.
   links:
   - url: https://twitter.com/#!/notch/status/187451691040382976
     link_name: Twitter
@@ -354,8 +352,7 @@
   - url: https://twitter.com/#!/notch/status/187473646267277312
     link_name: Twitter
   title_id: 5
-- question: Wird 0x10c Dinge unterstützen wie Schwerkraft, Relativitäts-Berechechnungen,
-    Planeten mit verschiedenen Umweltsphären?
+- question: Wird 0x10c Dinge wie Schwerkraft, Relativitäts-Berechnungen und Planeten mit verschiedenen Umweltsphären unterstützen?
   answer: Ja zum ersten, und ich KÖNNTE Zeit aus Gameplay-Gründen nicht-relativ gestalten.
     Umwelten, vielleicht... das meiste Leben wird ausgestorben sein.
   links:
@@ -383,7 +380,7 @@
   - url: https://twitter.com/#!/notch/status/187901649409421312
     link_name: Twitter
   title_id: 1
-- question: Um zu spezifizieren, "nahtlosese Landungen auf Planeten" meint
+- question: Um zu spezifizieren, "nahtlose Landungen auf Planeten" meint
     das Landen (vom Weltall aus) ohne einen Ladebildschirm?
   answer: Ja.
   links:
@@ -460,14 +457,14 @@
   - url: https://twitter.com/#!/notch/status/188389120828121088
     link_name: Twitter
   title_id: 2
-- question: Wirst du die Polygon-Zahl etwa auf der gleichen Anzahl halten oder ist das ein Gebiet,
-    auf dem du dir Freiheiten erlaubst?
+- question: Wirst du die Anzahl Polygone im Vergleich zu Elite II etwa gleich halten oder erlaubst du dir
+    hier mehr Freiheiten?
   answer: So lange es low-poly ist, bin ich glücklich.
   links:
   - url: https://twitter.com/#!/notch/status/188389249710690304
     link_name: Twitter
   title_id: 2
-- question: Wenn ich das richtig sehe, ist [SP+Zahl] für die DCPU nicht möglich? :(
+- question: Wenn ich das richtig sehe, ist [SP+Symbol] kein gültiger Befehl für die DCPU? :(
   answer: Noch nicht, das stimmt.
   links:
   - url: https://twitter.com/#!/notch/status/188390826404089857
