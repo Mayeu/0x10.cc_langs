@@ -284,12 +284,6 @@
   - url: https://twitter.com/#!/notch/status/187668308043108353
     link_name: Twitter
   title_id: 1
-- question: Quel type de graphisme auras le jeu ? Réalistique à la EVE ?
-  answer: Des graphismes simple. Très simple.
-  links:
-  - url: https://twitter.com/#!/notch/status/187451321966788608
-    link_name: Twitter
-  title_id: 2
 - question: Le jeu auras t'il un point de vue à la première personne ou seras t'il possible de zoomer hors du vaisseu ?
   answer: Première personne à l'intérieur du vaisseau.
   links:
@@ -364,3 +358,67 @@
   - url: https://twitter.com/#!/notch/status/188224386032082945
     link_name: Twitter
   title_id: 1
+- question: Quel type de graphisme auras le jeu ? Réalistique à la EVE ?
+  answer: Des graphismes simple, très simple. Le jeu n'auras pas de texture, uniquement des aplats de couleurs avec gestion de la lumière, mais pas de textures (juste quelques unes)
+  links:
+  - url: https://twitter.com/#!/notch/status/187451321966788608
+    link_name: Twitter
+  - url: https://twitter.com/#!/notch/status/188385652482641920
+    link_name: Twitter
+  title_id: 2
+- question: Donc il n'y auras pas de jolie étoiles et planètes ?:(
+  answer: Les étoiles et planètes seront très jolies.
+  links:
+  - url: https://twitter.com/#!/notch/status/188386791663996928
+    link_name: Twitter
+  title_id: 2
+- question: C'est une décision esthétique ou téchnique ?
+  answer: Esthétique. J'ai envie de capturer l'idée du look du futur que l'on se faisait dans les années 80.
+  links:
+  - url: https://twitter.com/#!/notch/status/188387333303840768
+    link_name: Twitter
+  - url: https://twitter.com/#!/notch/status/188387929633198080
+    link_name: Twitter
+  title_id: 2
+- question: Mais tu vas utiliser des textures pour l'écran virtuel non ?
+  answer: Oui, et j'utiliserais surement d'autres effets. Mais le look principale seras "non-texturé".
+  links:
+  - url: https://twitter.com/#!/notch/status/188388307586134016
+    link_name: Twitter
+  title_id: 2
+- question: On ne pourras pas décorrer sont vaisseau du coup ? Pas de nom écris sur les cotés ?! :0 
+  answer: BIEN SUR qu'on pourras. Mais ça seras des polygones !
+  links:
+  - url: https://twitter.com/#!/notch/status/188388455770890240
+    link_name: Twitter
+  title_id: 2
+- question: La référence que tu donnes comme jeu sans textures (Frontier - Elite II) possèdes quand même quelques textures (low res, bien sur)
+  answer: Il y avais quelques textures pour les planètes oui. Mais je vais me battre contre ça avec PLUS DE POLYGONES.
+  links:
+  - url: https://twitter.com/#!/notch/status/188388677586665472
+    link_name: Twitter
+  title_id: 2
+- question: J'ai joué à Elite dans les années 80 sur un ordinateur BBCB, est-ce-que 0x10c seras aussi un jeu en 3D wireframe ?
+  answer: Je suis en train de considérer l'ajout d'un mode wireframe ;)
+  links:
+  - url: https://twitter.com/#!/notch/status/188389034945544192
+    link_name: Twitter
+  title_id: 2
+- question: Honnêtement Frontier - Elite II est vachement moche esthétiquement parlant. Je ne pas que ça soit le meilleur argument pour un jeu sans textures.
+  answer: Il l'est maintenant oui, mais à l'époque c'étais une merveille.
+  links:
+  - url: https://twitter.com/#!/notch/status/188389120828121088
+    link_name: Twitter
+  title_id: 2
+- question: Vas tu tenter de limiter le nombre de polygones comme à l'époques ? Ou vas tu prendre certaine liberté à ce propos ?
+  answer: Tant que ça ressemble à du low-poly ça me va :)
+  links:
+  - url: https://twitter.com/#!/notch/status/188389249710690304
+    link_name: Twitter
+  title_id: 2
+- question: Si je comprend bien les spécifications du DCPU, il n'a pas de [SP+literal]? :(
+  answer: Pour l'instant non.
+  links:
+  - url: https://twitter.com/#!/notch/status/188390826404089857
+    link_name: Twitter
+  title_id: 6
