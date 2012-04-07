@@ -313,24 +313,11 @@
   - url: https://twitter.com/#!/notch/status/187668308043108353
     link_name: Twitter
   title_id: 1
-- question: What do you plan for graphics ? Realistics à la EVE ?
-  answer: Simple graphics. Very simple.
-  links:
-  - url: https://twitter.com/#!/notch/status/187451321966788608
-    link_name: Twitter
-  title_id: 2
 - question: Will the game be from the perspective of first person inside the ship
     or will it be zoomed out?
   answer: First person inside the ship.
   links:
   - url: https://twitter.com/#!/notch/status/187451691040382976
-    link_name: Twitter
-  title_id: 2
-- question: Have you decided on a graphics type? 2D, 3D, text based, isometric, or
-    is that still a point of discussion?
-  answer: I have kind of, yes
-  links:
-  - url: https://twitter.com/#!/notch/status/187475905382334464
     link_name: Twitter
   title_id: 2
 - question: Will we be seeing realtime light physics? Accurate light physics will
@@ -406,3 +393,67 @@
   - url: https://twitter.com/#!/notch/status/188224386032082945
     link_name: Twitter
   title_id: 1
+- question: What do you plan for graphics ? Realistics à la EVE ?
+  answer: Simple graphics. Very simple. The game will have no textures. Flat colored polygons with modern lighting, but no textures. None. (except a few)
+  links:
+  - url: https://twitter.com/#!/notch/status/187451321966788608
+    link_name: Twitter
+  - url: https://twitter.com/#!/notch/status/188385652482641920
+    link_name: Twitter
+  title_id: 2
+- question: So no pretty stars and planets? :(
+  answer: Very pretty stars and planets
+  links:
+  - url: https://twitter.com/#!/notch/status/188386791663996928
+    link_name: Twitter
+  title_id: 2
+- question: Is that an aesthetic or technical decision?
+  answer: aesthetic. I want to capture a "this is what we thought the future would be like in the 80's"-look. Also, frontier did it.
+  links:
+  - url: https://twitter.com/#!/notch/status/188387333303840768
+    link_name: Twitter
+  - url: https://twitter.com/#!/notch/status/188387929633198080
+    link_name: Twitter
+  title_id: 2
+- question: But you're using textures for the virtual screens, right?
+  answer: Yes, and I might use it for some additional effects. But the main look will be "untextured".
+  links:
+  - url: https://twitter.com/#!/notch/status/188388307586134016
+    link_name: Twitter
+  title_id: 2
+- question: So no stripes or patterns painted on the ships? And no names printed on the sides?! :0 
+  answer: OF COURSE stripes and names on the sides. But they will be polygons!
+  links:
+  - url: https://twitter.com/#!/notch/status/188388455770890240
+    link_name: Twitter
+  title_id: 2
+- question: You give as reference for a texture free game Frontier - Elite II, but there was texture on the planets and ship surfaces (Low res, ok).
+  answer: there were a few textures on the planets, yes. I'm going to combat that with MORE POLYGONS.
+  links:
+  - url: https://twitter.com/#!/notch/status/188388677586665472
+    link_name: Twitter
+  title_id: 2
+- question: I played Elite back in the mid 80s on a BBCB computer, will 0x10c be a 3D wireframe game??
+  answer: I am ACTUALLY considering having a wireframe mode. ;)
+  links:
+  - url: https://twitter.com/#!/notch/status/188389034945544192
+    link_name: Twitter
+  title_id: 2
+- question: Honestly... Frontier - Elite II aesthetically looks pretty ugly. Not exactly the strongest argument.
+  answer: It does NOW, but it was beautiful back in the day.
+  links:
+  - url: https://twitter.com/#!/notch/status/188389120828121088
+    link_name: Twitter
+  title_id: 2
+- question: Will you be keeping the polycounts around the same as back then or will that be one area you take liberty with?
+  answer: As long as it looks low-poly, I'm happy.
+  links:
+  - url: https://twitter.com/#!/notch/status/188389249710690304
+    link_name: Twitter
+  title_id: 2
+- question: If I'm reading this correctly, DCPU doesn't have [SP+literal]? :(
+  answer: Not yet, it doesn't.
+  links:
+  - url: https://twitter.com/#!/notch/status/188390826404089857
+    link_name: Twitter
+  title_id: 6
