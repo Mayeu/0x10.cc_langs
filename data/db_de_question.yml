@@ -35,15 +35,14 @@
   title_id: 6
 - question: Es gibt keine 'ADD with Carry' Instruktion -- zumindest sollte man zuerst
     'ADD' aufrufen, 'ADC' tut dies imlizit.
-  answer: ADD speichert den carry (Übertrag) in O, es verarbeitet ihn weiter. Du musst es
-    manuell mit DD &lt;dest&gt;, O verwenden.
+  answer: ADD speichert den carry (Übertrag) in O, es verarbeitet ihn weiter. Du musst es manuell mit DD &lt;dest&gt;, O verwenden.
   links:
   - url: https://twitter.com/#!/notch/status/187454603909009408
     link_name: Twitter
   title_id: 6
-- question: Wenn der Emulator einer Instruktion begegnet wie "x: set pc, x", wird
+- question: ! 'Wenn der Emulator einer Instruktion begegnet wie "x: set pc, x", wird
     er in einer Endlosschleife weiterlaufen oder ist er darauf optimiert,
-    anzuhalten?
+    anzuhalten?'
   answer: Er läuft unendlich lange weiter. Er wird nicht versuchen, das Halteproblem 
     zu lösen. ;)
   links:
