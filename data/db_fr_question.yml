@@ -424,4 +424,9 @@
   - url: https://twitter.com/#!/erisdev/status/188807078222114819
     link_name: Twitter
   title_id: 6
-
+- question: "Est-ce-que 0x10c seras aussi hardcore que la série des X par exemple ?"
+  answer: "Je ne suis pas sur."
+  links:
+  - url: https://twitter.com/#!/notch/status/189006563418181632
+    link_name: Twitter
+  title_id: 1

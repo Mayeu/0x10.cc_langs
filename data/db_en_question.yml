@@ -458,3 +458,9 @@
   - url: https://twitter.com/#!/erisdev/status/188807078222114819
     link_name: Twitter
   title_id: 6
+- question: This 0x10c thingie, is it going to be as hardcore as say the X series?
+  answer: Not sure!
+  title_id: 1
+  links:
+  - url: https://twitter.com/#!/notch/status/189006563418181632
+    link_name: Twitter
