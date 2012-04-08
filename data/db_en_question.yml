@@ -1,11 +1,4 @@
 ---
-- question: Is there a LLVM back-end for the CPU yet?
-  answer: I think someone was working on it, haha. I wrote my own little assembler
-    for it. It has quirks, but I like it anyway.
-  links:
-  - url: https://twitter.com/#!/notch/status/187447412015632385
-    link_name: Twitter
-  title_id: 6
 - question: Why no interrupts? Or am I missing something?
   answer: I don't like interrupts! Trying to think of a cute little message queue
     instead.
@@ -455,5 +448,13 @@
   answer: Not yet, it doesn't.
   links:
   - url: https://twitter.com/#!/notch/status/188390826404089857
+    link_name: Twitter
+  title_id: 6
+- question: Is there a LLVM back-end for the CPU yet?
+  answer: Personnaly I wrote my own little assembler for it. It has quirks, but I like it anyway. But some people start to work on a back-end, you check the progress of the back-end on <a href = 'https://github.com/krasin/llvm-dcpu16'>github</a>.
+  links:
+  - url: https://twitter.com/#!/notch/status/187447412015632385
+    link_name: Twitter
+  - url: https://twitter.com/#!/erisdev/status/188807078222114819
     link_name: Twitter
   title_id: 6

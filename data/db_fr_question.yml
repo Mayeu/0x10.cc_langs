@@ -1,10 +1,4 @@
 ---
-- question: Existe il un back-end pour LLVM pour le DCPU-16 ?
-  answer: Je crois que quelqu'un travaille dessus ! Personnellement j'ai écris mon propre petit assembleur, il n'est pas parfait mais je l'aime bien.
-  links:
-  - url: https://twitter.com/#!/notch/status/187447412015632385
-    link_name: Twitter
-  title_id: 6
 - question: Il n'y a pas d'interruptions ? Ou alors j'ai loupé quelque chose ?
   answer: Je n'aime pas les interruptions! Je pense implementer une jolie petite message-queue à la place.
   links:
@@ -422,3 +416,12 @@
   - url: https://twitter.com/#!/notch/status/188390826404089857
     link_name: Twitter
   title_id: 6
+- question: Existe il un back-end pour LLVM pour le DCPU-16 ?
+  answer: Personnellement j'ai écris mon propre petit assembleur, il n'est pas parfait mais je l'aime bien. Mais plusieurs personnes on commencer à travailler sur un back-end, vous pouvez suivre le projet sur <a href = 'https://github.com/krasin/llvm-dcpu16'>github</a>.
+  links:
+  - url: https://twitter.com/#!/notch/status/187447412015632385
+    link_name: Twitter
+  - url: https://twitter.com/#!/erisdev/status/188807078222114819
+    link_name: Twitter
+  title_id: 6
+
