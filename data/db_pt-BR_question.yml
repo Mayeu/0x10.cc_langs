@@ -24,7 +24,7 @@
     link_name: Twitter
   title_id: 6
 - question: Quais são as especificações da I/O?
-  answer: Eu ainda não chaguei tão longe assim. Estou pensando em uma fila de mensagens mapeada pela memória talvez.
+  answer: Eu ainda não cheguei tão longe assim. Estou pensando em uma fila de mensagens mapeada talvez pela memória.
   links:
   - url: https://twitter.com/#!/notch/status/187453108522205184
     link_name: Twitter
@@ -35,7 +35,7 @@
   - url: https://twitter.com/#!/notch/status/187454603909009408
     link_name: Twitter
   title_id: 6
-- question: ! 'quando o emulador encontra uma instrução tipo "x: set pc, x", ele entra em loop infinoto ou é otimizado para parar a emulação?'
+- question: ! 'Quando o emulador encontra uma instrução tipo "x: set pc, x", ele entra em loop infinito ou é otimizado para parar a emulação?'
   answer: Entra em loop infinito. Ele não tenta solucionar o problema. ;)
   links:
   - url: https://twitter.com/#!/notch/status/187460507979091968
@@ -47,7 +47,7 @@
   - url: https://twitter.com/#!/notch/status/187474398243074048
     link_name: Twitter
   title_id: 6
-- question: O que é esse O depois de DIV x, 0, quando este é equivalente a /0x10000 e /qualquer-coisa-maior? Eu diria que é tanto x (/0x10000) ou 0 (/infinito).
+- question: O que é esse O depois de DIV x, 0, quando ele é equivalente a /0x10000 e /qualquer-coisa-maior? Eu diria que é tanto x (/0x10000) ou 0 (/infinito).
   answer: 0
   links:
   - url: https://twitter.com/#!/notch/status/187567134824607744
@@ -66,7 +66,7 @@
     link_name: Twitter
   title_id: 6
 - question: Qual é a velocidade da CPU?
-  answer: Estou querendo 100kHz no momento.
+  answer: O objetivo é chegar a 100kHz no momento.
   links:
   - url: https://twitter.com/#!/notch/status/187448902314762240
     link_name: Twitter
@@ -96,12 +96,12 @@
     link_name: Twitter
   title_id: 4
 - question: Como os programas serão carregados na memória da DCPU-16? E no jogo também?
-  answer: Alguém vai ter que escrever um carregador. ;) Vão ter disquetes no jogo, se você gosta de relíquias, ou um array de rádios.
+  answer: Alguém vai ter que escrever um loader. ;) Vão ter disquetes no jogo, se você gostar de relíquias, ou um array de rádios.
   links:
   - url: https://twitter.com/#!/notch/status/187452068141875200
     link_name: Twitter
   title_id: 4
-- question: Você pensa em fazer algo tipo, um sistema de venda de programas?
+- question: Você pensa em fazer algo tipo um sistema de venda de programas?
   answer: Com certeza. As pessoas poderão criar os seus próprios também.
   links:
   - url: https://twitter.com/#!/notch/status/187452239344967680
@@ -120,7 +120,7 @@
     link_name: 0x10c.com
   title_id: 3
 - question: Como vai ser a CPU?
-  answer: A CPU é chamada DCPU-16, e é um processador de 16 bits.
+  answer: A CPU é chamada DCPU-16, e é um processador de 16-bits.
   links:
   - url: http://0x10c.com
     link_name: 0x10c.com
@@ -143,19 +143,19 @@
   - url: https://twitter.com/#!/notch/status/187451454066397184
     link_name: Twitter
   title_id: 3
-- question: Como você vai evitar vírus maliciosos, etc?
-  answer: Eu não vou evitar vírus, os jogadores terão que fazer isso por si só.
+- question: Como você vai combater vírus maliciosos, etc?
+  answer: Eu não vou combater vírus, os jogadores terão que fazer isso por si só.
   links:
   - url: https://twitter.com/#!/notch/status/187474819980328962
     link_name: Twitter
   title_id: 3
-- question: O computador vai ser a maior parte do jogo? Ou as pessoas menos ficcionadas por programação não vão poder jogar também?
+- question: O computador vai ser uma parte grande do jogo? Ou as pessoas menos aficcionadas por programação não vão poder jogar também?
   answer: Quando já tiver softwares disponíveis no jogo, as pessoas poderão usar seus computadores como computadores normais.
   links:
   - url: https://twitter.com/#!/notch/status/187475832078483456
     link_name: Twitter
   title_id: 3
-- question: A DCPU pode controlar as comunicações? Estou imaginando a DCPU processando distributivamente, em redes p2p ou centralizadas, controlando remotamente a nave, guerras cibernéticas, etc
+- question: A DCPU pode controlar as comunicações? Estou imaginando a DCPU fazendo processamento distribuído, redes p2p ou centralizadas, controle remoto da nave, guerras cibernéticas, etc
   answer: Essa é a ideia!
   links:
   - url: https://twitter.com/#!/notch/status/187662131779473409
@@ -174,7 +174,7 @@
     link_name: 0x10c.com
   title_id: 1
 - question: Qual é a história?
-  answer: Em um universo paralelo aonde a raça humana não entrou em extinção, viagens espaciais estava ganhando popularidade entre corporações e indivíduos mais ricos.<br/>Em 1988, uma nova célula de sono profundo foi lançada, compatível com todos os populares computadores de 16-bits. Infelizmente, utilizava big-endian, enquanto a especificação da DCPU-16 pedia little-endian. Isso levou a bugs sérios nos drivers inclusos, causando uma soneca de <code>0x0000 0000 0000 0001</code> anos durar na verdade <code>0x0001 0000 0000 0000</code> anos.<br/>O ano agora é 281 474 976 712 644 DC, e as primeiras pessoas perdidas estão acordando em um universo à beira da extinção, com todas as galáxias remotas eternamente perdidas por causa do desvio para o vermelho (red shift), formações estelares há tempos extintas, e buracos negros maciços dominando a galáxia.
+  answer: Em um universo paralelo aonde a raça humana não entrou em extinção, viagens espaciais estavam ganhando popularidade entre corporações e indivíduos mais ricos.<br/>Em 1988, uma nova célula de sono profundo foi lançada, compatível com todos os populares computadores de 16-bits. Infelizmente, utilizava ordenação big-endian, enquanto a especificação da DCPU-16 pedia little-endian. Isso levou a sérios bugs nos drivers inclusos, causando um sono de <code>0x0000 0000 0000 0001</code> ano durar na verdade <code>0x0001 0000 0000 0000</code> anos.<br/>O ano agora é 281 474 976 712 644 DC, e as primeiras pessoas perdidas estão acordando em um universo à beira da extinção, com todas as galáxias remotas eternamente perdidas por causa do desvio para o vermelho (red shift), formações estelares há tempos extintas, e buracos negros maciços dominando a galáxia.
   links:
   - url: http://0x10c.com/
     link_name: 0x10c.com
@@ -185,7 +185,7 @@
     <li>Batalhas espaciais contra a IA ou outros jogadores.</li>
     <li>Naves abandonadas cheias de muito ouro.</li>
     <li>Duct Tape! (Silver tape, ou fita isolante)</li>
-    <li>Aterrissagens nos plantas sem interrupções.</li>
+    <li>Aterrissagens nos planetas sem interrupções.</li>
     <li>Um sistema econômico avançado.</li>
     <li>Encontros aleatórios.</li>
     <li>Mineração, trocas e pilhagem. </li>
@@ -256,7 +256,7 @@
     link_name: Twitter
   title_id: 1
 - question: Já parou para pensar em aspectos de engenharia? Reparos ao casco, motores, etc. Manutenção mecânica vai ter uma curva de aprendizado íngrime?
-  answer: Espero que sim. Por razões de jogabilidade, eu vou fazer duct tape consertar TUDO por um curto período de tempo.
+  answer: Espero que sim. Por razões de jogabilidade, eu vou fazer a fita isolante consertar TUDO por um curto período de tempo.
   links:
   - url: https://twitter.com/#!/notch/status/187461075577470976
     link_name: Twitter
@@ -279,21 +279,20 @@
   - url: https://twitter.com/#!/notch/status/187451691040382976
     link_name: Twitter
   title_id: 2
-- question: Nós veremos óptica em tempo real? Óptica bem calibrada será necessário em um jogo SciFi realístico.
-  answer: Se você quer dizer desvio gravitacional de buracos negros, espero que sim. Se encaixar no estilo visual.
+- question: Nós veremos óptica em tempo real? Óptica bem calibrada será necessária em um jogo SciFi realístico.
+  answer: Se você quer dizer desvio gravitacional por buracos negros, espero que sim. Se encaixar no estilo visual.
   links:
   - url: https://twitter.com/#!/notch/status/187454250547294208
     link_name: Twitter
   title_id: 5
-- question: Eu quis dizer o tempo de lag entre a luz atingir a nave a atingir os sensores.
-  answer: Eu vou fazer concessões para melhorar a jogabilidade. Eu quis dizer ciência realística que segue uma lógica, mas não 100% correta.
+- question: Eu quis dizer o tempo de lag entre a luz atingir a nave e atingir os sensores.
+  answer: Eu vou fazer concessões para melhorar a jogabilidade. Eu quis dizer SciFi realístico que segue uma lógica, mas não 100% correta.
   links:
   - url: https://twitter.com/#!/notch/status/187454898189774848
     link_name: Twitter
   title_id: 5
-- question: Então, um 2 ou 3 de 10 na escala de realidade?
-  answer: Depende em que escala. Nessa <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/MohsScaleOfScienceFictionHardness">daqui</a>,
-    mais ou menos 4.
+- question: Então, 2 ou 3 de 10 na escala de realidade?
+  answer: Depende em que escala. Nessa <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/MohsScaleOfScienceFictionHardness">daqui</a>, mais ou menos 4.
   links:
   - url: https://twitter.com/#!/notch/status/187456074956279808
     link_name: Twitter
@@ -334,7 +333,7 @@
   - url: https://twitter.com/#!/notch/status/187945752742473728
     link_name: Twitter
   title_id: 5
-- question: Como será a morte no jogo?
+- question: Como você lidará com a morte no jogo?
   answer: Morrer significa que você (e sua nave) vão renascer. Imortalidade Quântica! Você viverá em um universo que será exatamente o mesmo (exceto que você não terá morrido).
   links:
   - url: https://twitter.com/#!/notch/status/188223238164332544
@@ -370,31 +369,31 @@
   - url: https://twitter.com/#!/notch/status/188388307586134016
     link_name: Twitter
   title_id: 2
-- question: Então, sem tiras ou padrões impressos no lado da nave? E sem nomes no lado da nave?! :0 
-  answer: É CLARO que terá nomes e tiras nos lados das naves. Mas eles serão polígonos!
+- question: Então, sem tiras ou padrões impressos na lateral da nave? E sem nomes na lateral?! :0 
+  answer: É CLARO que terá nomes e tiras nas laterais das naves. Mas eles serão polígonos!
   links:
   - url: https://twitter.com/#!/notch/status/188388455770890240
     link_name: Twitter
   title_id: 2
-- question: Você deu como referência um jogo sem texturas: Frontier - Elite II, mas tinha texutas nos planetas e nas superfícies das naves (Com uma qualidade baixa, ok).
+- question: Você deu como referência um jogo sem texturas: Frontier - Elite II, mas tinha texturas nos planetas e nas naves (com uma qualidade baixa, ok).
   answer: Vai ter algumas texturas nos planetas, sim. Eu vou combater isso usando MAIS POLÍGONOS.
   links:
   - url: https://twitter.com/#!/notch/status/188388677586665472
     link_name: Twitter
   title_id: 2
 - question: Eu joguei Elite lá pelo meio dos anos 80 em um computador BBCB, 0x10c vai ser um jogo wireframe 3D??
-  answer: Eu estou na verdade considerando ter um modo wireframe. ;)
+  answer: Eu estou REALMENTE considerando ter um modo wireframe. ;)
   links:
   - url: https://twitter.com/#!/notch/status/188389034945544192
     link_name: Twitter
   title_id: 2
-- question: Honestamente... Frontier - Elite II é muito feio esteticamente. Não foi um argumento muito forte.
+- question: Honestamente... Frontier - Elite II é muito feio. Não foi um argumento muito forte.
   answer: Parece feio AGORA, mas em sua época era lindo.
   links:
   - url: https://twitter.com/#!/notch/status/188389120828121088
     link_name: Twitter
   title_id: 2
-- question: Você vai manter a contagem de polígonos parecida com as de antigamente ou essa vai ser uma área que vocês vai ter liberdade?
+- question: Você vai manter a contagem de polígonos parecida com as de antigamente ou essa vai ser uma área que você vai ter liberdade?
   answer: Estou feliz enquanto parecer que tem poucos polígonos.
   links:
   - url: https://twitter.com/#!/notch/status/188389249710690304
