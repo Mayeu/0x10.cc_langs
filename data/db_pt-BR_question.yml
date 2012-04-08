@@ -125,7 +125,7 @@
   - url: http://0x10c.com
     link_name: 0x10c.com
   title_id: 3
-- question: Parece ser um jogo realmente nerd, poderá ser apreciado por meros mortais? (ex: pessoas que não sabem programar)
+- question: "Parece ser um jogo realmente nerd, poderá ser apreciado por meros mortais? (ex: pessoas que não sabem programar)"
   answer: Eu espero que sim. :)
   links:
   - url: https://twitter.com/#!/notch/status/187445749200601088
@@ -375,7 +375,7 @@
   - url: https://twitter.com/#!/notch/status/188388455770890240
     link_name: Twitter
   title_id: 2
-- question: Você deu como referência um jogo sem texturas: Frontier - Elite II, mas tinha texturas nos planetas e nas naves (com uma qualidade baixa, ok).
+- question: "Você deu como referência um jogo sem texturas: Frontier - Elite II, mas tinha texturas nos planetas e nas naves (com uma qualidade baixa, ok)."
   answer: Vai ter algumas texturas nos planetas, sim. Eu vou combater isso usando MAIS POLÍGONOS.
   links:
   - url: https://twitter.com/#!/notch/status/188388677586665472
