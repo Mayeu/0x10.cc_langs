@@ -143,273 +143,242 @@
   - url: https://twitter.com/#!/notch/status/187474819980328962
     link_name: Twitter
   title_id: 3
-- question: Is the virtual computer going to be a large part of it? Or are less programming
-    savvy people not going to be able to play?
-  answer: Once there's software available in the game, people can use their computers
-    like normal computers
+- question: 遊戲中模擬的電腦會扮演吃重的角色嗎？沒那麼會寫程式的人能夠玩嗎？
+  answer: 一但遊戲中有程式可用了，玩家就能把他們的遊戲中電腦當成一般電腦用。
   links:
   - url: https://twitter.com/#!/notch/status/187475832078483456
     link_name: Twitter
   title_id: 3
-- question: Can the DCPU control comms? Imagining DCPU distributed processing, p2p
-    or centralized nets, remote ship control, cyber warfare, etc
-  answer: That's the idea!
+- question: DCPU 能夠控制通訊嗎？想像一下 DCPU 分散式處理，P2P，或中央網路，遙控船隻，電子戰...等等
+  answer: 就是這樣！
   links:
   - url: https://twitter.com/#!/notch/status/187662131779473409
     link_name: Twitter
   title_id: 3
-- question: Will there be more then one CPU per Ship?
-  answer: Yes. Aiming at three computers being a reasonable amount.
+- question: 一艘船會有一顆以上的 CPU 嗎？
+  answer: 是的，一艘船有三顆 CPU 應該是個合理的數量。
   links:
   - url: https://twitter.com/#!/notch/status/187665962177273857
     link_name: Twitter
   title_id: 3
-- question: What kind of game is 0x10c?
-  answer: 0x10<sup>c</sup> is an Elite-like space simulation game. You will be able
-    to fight, trade, loot, mine, etc, in an universe close to extinction.
+- question: 0x10c 是怎樣的遊戲？
+  answer: 0x10<sup>c</sup> 是一款 Elite-like 的太空模擬遊戲。遊戲中你能夠戰鬥，貿易，打劫，採礦....等等。
   links:
   - url: http://0x10c.com/
     link_name: 0x10c.com
   title_id: 1
-- question: What the pitch?
-  answer: In a parallel universe where the space race never ended, space
-    travel was gaining popularity amongst corporations and rich individuals.<br/>In
-    1988, a brand new deep sleep cell was released, compatible with all popular 16
-    bit computers. Unfortunately, it used big endian, whereas the DCPU-16 specifications
-    called for little endian. This led to a severe bug in the included drivers, causing
-    a requested sleep of <code>0x0000 0000 0000 0001</code> years to last for
-    <code>0x0001 0000 0000 0000</code> years.<br/>It's now the year 281 474 976 712 644
-    AD, and the first lost people are starting to wake up to a universe on the brink of
-    extinction, with all remote galaxies forever lost to red shift, star formation long
-    since ended, and massive black holes dominating the galaxy.
+- question: 背景故事是？
+  answer: <p>在一個太空競賽沒有停止的平行世界中，太空旅行在企業與有錢人中開始流行起來。</p>
+	<p>在 1988 年，一款新的人工睡眠艙問世了。他能與當代熱門的 16-bit 電腦相容。很不幸的是，人工睡眠艙的控制使用 big endian，而 DCPU-16 個規範則使用 little endian。這造成一連串驅動程式的錯誤，原本預定執行 <code>0x0000 0000 0000 0001</code> 年的人工睡眠會持續 <code>0x0001 0000 0000 0000</code> 年之久。</p>
+	<p>現在是西元 281 474 976 712 644 年，而我們的太空迷航者醒來時看到的是個瀕臨滅亡的宇宙。遠方的銀河都因為強大的紅位移（red shift）而消失，星座也已變了樣，巨大黑洞佔據了銀河系。</p>
   links:
   - url: http://0x10c.com/
     link_name: 0x10c.com
   title_id: 1
-- question: What will I be able to do?
-  answer: <ul><li>Lots of engineering.</li>
-    <li>Fully working computer system.</li>
-    <li>Space battles against the AI or other players.</li>
-    <li>Abandoned ships full of loot.</li>
-    <li>Duct tape!</li>
-    <li>Seamlessly landing on planets.</li>
-    <li>Advanced economy system.</li>
-    <li>Random encounters.</li>
-    <li>Mining, trading, and looting. </li>
-    <li>Single and multi player connected via the multiverse.</li>
+- question: 遊戲中我能做什麼？
+  answer: <ul><li>大量的工程工作</li>
+    <li>全功能的電腦系統</li>
+    <li>與 AI 或其他玩家展開太空戰鬥</li>
+    <li>在廢船上尋寶</li>
+    <li>貼膠帶!</li>
+    <li>無縫降落行星表面</li>
+    <li>先進的經濟系統</li>
+    <li>隨機遭遇戰</li>
+    <li>採礦，貿易，打劫</li>
+    <li>單人或多人連線</li>
     </ul>
   links:
   - url: http://0x10c.com
     link_name: 0x10c.com
   title_id: 1
-- question: What will be the price?
-  answer: No price decided yet. A solo mode should be avaible, and there will certainly
-    be a monthly fee for playing on the multiverse (MMO fashion) since even when you
-    will not be connected trajectory and your ship's computer will still be simulated.
+- question: 價格是？
+  answer: 價格還沒決定，應該會有單人遊戲模式。而線上連線模式會有月費，因為就算你在離線的狀況下還是繼續在模擬船上電腦的執行。
   links:
   - url: http://0x10c.com
     link_name: 0x10c.com
   title_id: 1
-- question: Whaaaaaaaat ? Monthly fee ? But, but, but, free 2 play is the futur dude
-    !
-  answer: f2p is a scam.
+- question: 啥？要月費？但但但未來是免月費也能玩的時代阿！
+  answer: 「免費玩」是個幌子
   links:
   - url: https://twitter.com/#!/notch/status/187298042087604224
     link_name: Twitter
   title_id: 1
-- question: Why did you annonce the monthly fee so soon? :'( I would have prefered
-    to stay in my dream of a everything-is-free-world :'(
-  answer: To get the bad news out as soon as possible.
+- question: 幹嘛這麼早公布要收月費 :'( 我想留在一切都不用錢的夢世界裡面 :'(
+  answer: 早點讓利空出盡
   links:
   - url: https://twitter.com/#!/notch/status/187446935106502656
     link_name: Twitter
   title_id: 1
-- question: Will there be an alpha cycle à la Minecraft?
-  answer: Yes.
+- question: 會有 Minecraft 那樣的 alphy 階段嗎？
+  answer: 會
   links:
   - url: https://twitter.com/#!/Capp00/status/187282914386526208
     link_name: Twitter
   title_id: 1
-- question: What about the logo?
-  answer: The logo is rendered ingame by the current prototype engine.
+- question: Logo圖案是?
+  answer: 用目前的試做遊戲引擎在遊戲中繪製出來的。
   links:
   - url: https://twitter.com/#!/notch/status/187297023429586945
     link_name: Twitter
   title_id: 1
-- question: Will it be possible to have your own servers in 0x10c or is it just one
-    big server?
-  answer: I do not know yet!
+- question: 有可能架設自己的 0x10c 伺服器嗎？還是只有一台巨大的中央主伺服器？
+  answer: 還不知道！
   links:
   - url: https://twitter.com/#!/notch/status/187447546329829376
     link_name: Twitter
   title_id: 1
-- question: Can we have build-your-own-ships?
-  answer: 'Yes'
+- question: 能夠設計建造自己的船艦嗎？
+  answer: '可以'
   links:
   - url: https://twitter.com/#!/notch/status/187453476362657793
     link_name: Twitter
   title_id: 1
-- question: Can me and my buddies all crew up on one ship?
-  answer: 'Yes'
+- question: 我跟我朋友能夠搭乘同一艘船嗎？
+  answer: '可以'
   links:
   - url: https://twitter.com/#!/notch/status/187453524634902528
     link_name: Twitter
   title_id: 1
-- question: Will the game be suitable for learning?
-  answer: I hope so.
+- question: 這款遊戲適合作為教育用途嗎？
+  answer: 我希望
   links:
   - url: https://twitter.com/#!/notch/status/187453888662745088
     link_name: Twitter
   title_id: 1
-- question: Will there be different races in the game? If so, can they 'interact in
-    an intimate manner'?
-  answer: ummm.. evolutionarily speaking, that's highly unlikely.
+- question: 遊戲中會有不同種族嗎？如果有的話，他們能夠「親密接觸」嗎？
+  answer: 嗯...從演化的角度來說，不太可能。
   links:
   - url: https://twitter.com/#!/notch/status/187460269667123200
     link_name: Twitter
   title_id: 1
-- question: Thoughts on the engineering apsect as of yet? Repairs to hull, engines,
-    etc. Will mechanical maintenance have a steep learning curve?
-  answer: I hope so. For gameplay reasons, I will make duct tape fix ANYTHING for
-    a shorter period of time.
+- question: 有考慮到船艦的工程部分嗎？像是維修船殼引擎等等。機械維護會不會很難上手？
+  answer: 希望有。而為了遊戲性的考量，會有一小段時間你能用大力膠帶修理任何東西。
   links:
   - url: https://twitter.com/#!/notch/status/187461075577470976
     link_name: Twitter
   title_id: 1
-- question: But what about planet gameplay?
-  answer: There will be planet gameplay.
+- question: 遊戲會有行星表面的部份嗎？
+  answer: 遊戲會有行星表面的部份。
   links:
   - url: https://twitter.com/#!/notch/status/187666854800670721
     link_name: Twitter
   title_id: 1
-- question: ! 'Will #0x10c support Unicode?'
-  answer: Yes, but the DCPU doesn't.
+- question: ! '#0x10c 會支援 unicode 嗎？'
+  answer:會，但 DCPU 不支援。
   links:
   - url: https://twitter.com/#!/notch/status/187668308043108353
     link_name: Twitter
   title_id: 1
-- question: Will the game be from the perspective of first person inside the ship
-    or will it be zoomed out?
-  answer: First person inside the ship.
+- question: 這款遊戲會是船艦內第一人稱，或是畫面可以縮放到船艦外？
+  answer: 船艦內第一人稱。
   links:
   - url: https://twitter.com/#!/notch/status/187451691040382976
     link_name: Twitter
   title_id: 2
-- question: Will we be seeing realtime light physics? Accurate light physics will
-    be required for a Hard SciFi game.
-  answer: If you mean gravitational lensing from black holes, then I hope so. If it
-    fits the visual style.
+- question: 我們會看到即時預算的光學物理嗎？這可是硬科幻遊戲必備的。
+  answer: 如果你指的是黑洞造成的重力透鏡，我希望有。如果跟遊戲的視覺風格能搭的話。
   links:
   - url: https://twitter.com/#!/notch/status/187454250547294208
     link_name: Twitter
   title_id: 5
-- question: I meant the lag-time between the light hitting a ship and hitting your
-    sensors.
-  answer: I am going to make concessions for gameplay. I mean hard science as in no
-    hand-wavey science, not as in 100% correct.
+- question: 我是指光線從某艘船艦上面反射，到船艦上的偵測器偵測到的延遲時間。
+  answer: 我會為了遊戲性讓步，我說的硬科學不包含那些不直覺的部分，而不是完全理論正確的。
   links:
   - url: https://twitter.com/#!/notch/status/187454898189774848
     link_name: Twitter
   title_id: 5
-- question: So, a 2 or 3 of 10 in the Hardness scale?
-  answer: Depends on which scale. On this <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/MohsScaleOfScienceFictionHardness">one</a>,
-    about a 4.
+- question: 所以硬度等級是？2？3？10？
+  answer: 看你是用哪種等級。以<a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/MohsScaleOfScienceFictionHardness">這種</a>來說大概在 4 左右。
   links:
   - url: https://twitter.com/#!/notch/status/187456074956279808
     link_name: Twitter
   title_id: 5
-- question: Do we get to orbit planets and drift if we cut our engines?
-  answer: That's the plan.
+- question: 是不是切掉引擎就會在太空中飄，或是繞著行星轉
+  answer: 計畫是這樣
   links:
   - url: https://twitter.com/#!/notch/status/187473646267277312
     link_name: Twitter
   title_id: 5
-- question: Will 0x10c feature stuff like gravity, relativity calculations, planetary
-    ecologies?
-  answer: Yes to the first one, and I MIGHT make time non-relative for game play reasons.
-    Ecologies, maybe.. most life will be dead.
+- question: 0x10c 會有像是重力，相對論的計算，行星生態圈...之類的東西嗎？
+  answer: 重力有的，而為了遊戲性我*可能*不會讓時間是相對性的。生態圈...也許...大部分的生物都會死。
   links:
   - url: https://twitter.com/#!/notch/status/187842817425543168
     link_name: Twitter
   title_id: 5
-- question: What's the density of the floppies in 0x10c?
-  answer: Aiming at 1.44MB 3½inch
+- question: 0x10c 裡面會用哪種軟碟片？
+  answer: 目標是 1.44 MB 的三吋半軟碟。
   links:
   - url: https://twitter.com/#!/notch/status/187852568318312448
     link_name: Twitter
   title_id: 3
-- question: DCPU-16 specifying the number of cycles per OP means that no optimising
-    interpreters are allowed?
-  answer: You're free to do that, but the ones in the game will adhere to the cycle
-    counts.
+- question: DCPU-16 指定了每個 OP 需要的 cycle，這是表示沒辦法最佳化直譯器嗎？
+  answer: 你可以自己做一個，不過遊戲中的會跟著 cycle 數跑。
   links:
   - url: https://twitter.com/#!/notch/status/187900363469373442
     link_name: Twitter
   title_id: 6
-- question: Can you elaborate on the whole free-to-play is a scam thingy?
-  answer: Yes, the scam is RIGHT THERE in the name. It's not free. Developers are
-    making MORE money off "free to play".
+- question: 解釋一下「免費玩是個幌子」的意思嗎？
+  answer: Y從名字就是個幌子，遊戲開發者其實賺了更多錢，雖然號稱是免費玩。
   links:
   - url: https://twitter.com/#!/notch/status/187901649409421312
     link_name: Twitter
   title_id: 1
-- question: To clarify, "seamlessly landing on planets" means from space to a planet's
-    surface without a loading screen?
-  answer: 'Yes'
+- question: 確認一下，「無縫行星降落」是指從太空中降落到行星表面而不會看到載入中畫面？
+  answer: '是'
   links:
   - url: https://twitter.com/#!/notch/status/187945752742473728
     link_name: Twitter
   title_id: 5
-- question: What about death in the game?
-  answer: Dying in the game means you (and the ship) respawn. Quantum Immortality! You live on in a parallel universe that's exactly the same (other than you never dying).
+- question: 遊戲中的死亡機制是？
+  answer: 遊戲中死亡表示你（和你的船）會立即重生。量子永生！你會活在一個完全相同的平行宇宙中，而不是完全沒有死過。
   links:
   - url: https://twitter.com/#!/notch/status/188223238164332544
     link_name: Twitter
   - url: https://twitter.com/#!/notch/status/188224386032082945
     link_name: Twitter
   title_id: 1
-- question: What do you plan for graphics ? Realistics à la EVE ?
-  answer: Simple graphics. Very simple. The game will have no textures. Flat colored polygons with modern lighting, but no textures. None. (except a few)
+- question: 畫面風格是？像是 EVE 那樣的寫實風格嗎?
+  answer: 畫面會很簡單，非常簡單。遊戲不會有貼圖，你會看到硬板板的多邊型加上現代的打光效果，但沒有貼圖（只有很少的例外）
   links:
   - url: https://twitter.com/#!/notch/status/187451321966788608
     link_name: Twitter
   - url: https://twitter.com/#!/notch/status/188385652482641920
     link_name: Twitter
   title_id: 2
-- question: So no pretty stars and planets? :(
-  answer: Very pretty stars and planets
+- question: 所以沒有漂亮的星星跟行星嗎？ :(
+  answer: 星星跟行星很漂亮
   links:
   - url: https://twitter.com/#!/notch/status/188386791663996928
     link_name: Twitter
   title_id: 2
-- question: Is that an aesthetic or technical decision?
-  answer: aesthetic. I want to capture a "this is what we thought the future would be like in the 80's"-look. Also, frontier did it.
+- question: 這是視覺風格的決策還是技術決策？
+  answer: 視覺風格，我想抓住那種「這是我們在 80 年代想像的未來世界風」的感覺。此外，Frontier: Elite II 也是這樣。
   links:
   - url: https://twitter.com/#!/notch/status/188387333303840768
     link_name: Twitter
   - url: https://twitter.com/#!/notch/status/188387929633198080
     link_name: Twitter
   title_id: 2
-- question: But you're using textures for the virtual screens, right?
-  answer: Yes, and I might use it for some additional effects. But the main look will be "untextured".
+- question: 但是你的虛擬螢幕要用到貼圖吧。
+  answer: 是的，而且可能還會有某些特效用到。不過大體上看起來會是無貼圖的風格。
   links:
   - url: https://twitter.com/#!/notch/status/188388307586134016
     link_name: Twitter
   title_id: 2
-- question: So no stripes or patterns painted on the ships? And no names printed on the sides?! :0 
-  answer: OF COURSE stripes and names on the sides. But they will be polygons!
+- question: 所以不會有 stripes 或是船艦塗樣了？船舷也不會有船名!? :O
+  answer: 當然會有船名跟船艦圖樣，但是都是多邊型。
   links:
   - url: https://twitter.com/#!/notch/status/188388455770890240
     link_name: Twitter
   title_id: 2
-- question: You give as reference for a texture free game Frontier - Elite II, but there was texture on the planets and ship surfaces (Low res, ok).
-  answer: there were a few textures on the planets, yes. I'm going to combat that with MORE POLYGONS.
+- question: 你給無貼圖遊戲範例是 Frontier - Elite II，但這款遊戲在行星跟船艦表面有用上貼圖阿（雖然是低解析度的）
+  answer: 是的，行星表面有用一些貼圖，不過我打算用*更多的多邊型*來處理這個問題。
   links:
   - url: https://twitter.com/#!/notch/status/188388677586665472
     link_name: Twitter
   title_id: 2
-- question: I played Elite back in the mid 80s on a BBCB computer, will 0x10c be a 3D wireframe game??
-  answer: I am ACTUALLY considering having a wireframe mode. ;)
+- question: 我在 80 年代中期的 BBCB 電腦上玩過 Elite，遊戲會有 3D 線框模式嗎？
+  answer: 我正在考慮要加入線框模式 ;)
   links:
   - url: https://twitter.com/#!/notch/status/188389034945544192
     link_name: Twitter
