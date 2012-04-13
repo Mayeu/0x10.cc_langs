@@ -1,21 +1,18 @@
 ---
-- question: Why no interrupts? Or am I missing something?
-  answer: I don't like interrupts! Trying to think of a cute little message queue
-    instead.
+- question: Waarom geen 'interrupts'? Of mis ik iets?
+  answer: Ik hou niet van interrupts! Probeer het in de plaats daarvan te zien als een schattige berichtenrij.
   links:
   - url: https://twitter.com/#!/notch/status/187448370107912192
     link_name: Twitter
   title_id: 6
-- question: Is there a compiler yet?
-  answer: No.
+- question: Is er al een compiler?
+  answer: Nee.
   links:
   - url: https://twitter.com/#!/notch/status/187448576505413632
     link_name: Twitter
   title_id: 6
-- question: For the instructions that take multiple cycles, is it safe to assume they
-    don't modify values until their final cycle?
-  answer: For emulation efficiency I actually made them modify the value before deducting
-    any cycles. They're just a postfix.
+- question: Voor de instructies die meerdere cycli duren, is hat veilig om te veronderstellen dat ze geen waarden veranderen tot hun laatste cyclus?
+  answer: Ik heb ze eigenlijk de waarden doen veranderen voordat ze enige cycli afleiden voor emulatie efficiëntie. Ze zijn gewoon een navoegsel.
   links:
   - url: https://twitter.com/#!/notch/status/187449161216573441
     link_name: Twitter
