@@ -1,6 +1,6 @@
 # 0x10.cc langs
 
-This repository contains the translation for 0x10.cc website
+This repository contains the translations for the 0x10.cc website.
 
 ## data
 
@@ -8,9 +8,9 @@ The data folder contains yml files representing the Q&A database.
 
 ### Questions representation
 
-A question have the following fields:
+Every question has the following fields:
 
-    - question: My awesome question
+    - question: The awesome question by INternet
       answer: The awesome answer from Notch
       title_id: X
       links:
@@ -19,7 +19,8 @@ A question have the following fields:
       - url: second url
         link_name: name of the second url
 
-You can have as many url and link names as you want.
+You can have as many urls and link names as you want.
+
 The title id should be one of the following numbers:
 
     1: The game
@@ -31,8 +32,8 @@ The title id should be one of the following numbers:
 
 ### Ordering
 
-Currently the database does not have any timestamps on the item. Last are more recent, and the
-order in the file is the order on the website.
+Currently the database does not have any timestamps on the items. 
+The last ones are more recent and the order in the file is the order on the website.
 
 ### Filename
 
