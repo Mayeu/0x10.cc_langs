@@ -10,7 +10,7 @@ The data folder contains yml files representing the Q&A database.
 
 Every question has the following fields:
 
-    - question: The awesome question by INternet
+    - question: The awesome question by Internet
       answer: The awesome answer from Notch
       title_id: X
       links:
