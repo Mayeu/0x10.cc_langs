@@ -1,0 +1,417 @@
+---
+- question: 為什麼沒有 interrupt？我有漏掉什麼嗎？
+  answer: 我不喜歡 interrupt！改用小巧可愛的 message queue 吧。
+  links:
+  - url: https://twitter.com/#!/notch/status/187448370107912192
+    link_name: Twitter
+  title_id: 6
+- question: 有 compiler 能用了嗎
+  answer: 沒有
+  links:
+  - url: https://twitter.com/#!/notch/status/187448576505413632
+    link_name: Twitter
+  title_id: 6
+- question: 對於要執行多個 cycle 的指令來說，能夠安全的認定指令直到最後一個 cycle 才會修改計算值嗎？
+  answer: 為了模擬的效率，數值其實是在計算 cycle 數之前就被修改了。
+  links:
+  - url: https://twitter.com/#!/notch/status/187449161216573441
+    link_name: Twitter
+  title_id: 6
+- question: 有 I/O 的 spec 嗎?
+  answer: 還沒做到那裏，也許會像是 memory mapped message queue 這樣的感覺。
+  links:
+  - url: https://twitter.com/#!/notch/status/187453108522205184
+    link_name: Twitter
+  title_id: 6
+- question: 指令集裡面沒有進位加法（ADD with Carry）... 或者，如果是自動做到這點，那應該要區分 'ADD' 與 'ADC'？
+  answer: 進位會儲存在 O 暫存器（overflow）裡面，你必須自己把進位加上，像是 ADD &lt;dest&gt;, O
+  links:
+  - url: https://twitter.com/#!/notch/status/187454603909009408
+    link_name: Twitter
+  title_id: 6
+- question: ! '模擬器如果碰到像是 "x: set pc, x" 的指令，他會無限迴圈還是偵測到問題然後停止執行？'
+  answer: 無限迴圈。模擬器不會試著去處理這類問題 ;)
+  links:
+  - url: https://twitter.com/#!/notch/status/187460507979091968
+    link_name: Twitter
+  title_id: 6
+- question: CPU 有管線設計嗎？
+  answer: 沒有。為了提昇模擬速度得有所犧牲。
+  links:
+  - url: https://twitter.com/#!/notch/status/187474398243074048
+    link_name: Twitter
+  title_id: 6
+- question: O 在做 DIV x, 0 5 之後會是等於是 /0x10000 或更大的數字嗎？我猜是 x (/0x10000) 或是 0 (/無限大).
+  answer: 0
+  links:
+  - url: https://twitter.com/#!/notch/status/187567134824607744
+    link_name: Twitter
+  title_id: 6
+- question: 0x10c 文件說 DCPU-16 是 little endian，但你的放出的規範卻說是 big endian.
+  answer: 唔，這下糗了 :D
+  links:
+  - url: https://twitter.com/#!/notch/status/187596789304655874
+    link_name: Twitter
+  title_id: 6
+- question: dcpu-16 的啟動程序是？暫存器的數值會是固定值嗎？你好像是在暗示說 sp 會是 0xffff...
+  answer: SP 一開始是 0. 第一個 PUSH 是 --SP，也就會變成 0xFFFF。其他東西一開始都是 0。
+  links:
+  - url: https://twitter.com/#!/notch/status/187637515941978114
+    link_name: Twitter
+  title_id: 6
+- question: CPU 速度是？
+  answer: 目前目標是 100 khz。
+  links:
+  - url: https://twitter.com/#!/notch/status/187448902314762240
+    link_name: Twitter
+  title_id: 4
+- question: 我能用你的 16-bit 處理器做一個能追蹤 IP 的 GUI 程式嗎？
+  answer: 可以的！
+  links:
+  - url: https://twitter.com/#!/notch/status/187426146290372608
+    link_name: Twitter
+  title_id: 4
+- question: CPU 在遊戲中能夠透過某種網路彼此串聯嗎？
+  answer: '會'
+  links:
+  - url: https://twitter.com/#!/notch/status/187445818616320000
+    link_name: Twitter
+  title_id: 4
+- question: 會有能做高階 coding 的 OS 出來嗎？
+  answer: 大家得自己想辦法寫 ;)
+  links:
+  - url: https://twitter.com/#!/notch/status/187451454066397184
+    link_name: Twitter
+  title_id: 4
+- question: 玩家有可能寫出能影響其他玩家船隻的惡意程式嗎？?
+  answer: 可以的，這是功能正常完整的電腦。
+  links:
+  - url: https://twitter.com/#!/notch/status/187451555384004610
+    link_name: Twitter
+  title_id: 4
+- question: 遊戲裡面，程式要如何載入到 DCPU-16 的記憶體中？
+  answer: 首先要有人寫出 loader ;) 遊戲裡面會有軟碟片或 radio array。
+  links:
+  - url: https://twitter.com/#!/notch/status/187452068141875200
+    link_name: Twitter
+  title_id: 4
+- question: 有考慮做遊戲內的程式賣場系統嗎？
+  answer: 當然。玩家也可以自己搞一套。
+  links:
+  - url: https://twitter.com/#!/notch/status/187452239344967680
+    link_name: Twitter
+  title_id: 4
+- question: 我能用船上電腦在採礦時玩毀滅戰士嗎？
+  answer: 嗯，或多或少，可以。
+  links:
+  - url: https://twitter.com/#!/notch/status/187453951619248128
+    link_name: Twitter
+  title_id: 4
+- question: 船上的電腦系統大概會是怎樣？
+  answer: 遊戲中會完整的模擬船上的電腦，執行功能完整的組合語言。<a href="http://0x10c.com/doc/dcpu-16.txt">詳細規範在此</a>。
+  links:
+  - url: http://0x10c.com
+    link_name: 0x10c.com
+  title_id: 3
+- question: 關於 CPU？
+  answer: CPU 叫做 DCPU-16，是一顆 16-bit 的處理器。
+  links:
+  - url: http://0x10c.com
+    link_name: 0x10c.com
+  title_id: 3
+- question: 聽起來好宅，一般人類（不會寫 code 的那種）能夠享受這款遊戲嗎？
+  answer: 我是這麼希望的 :)
+  links:
+  - url: https://twitter.com/#!/notch/status/187445749200601088
+    link_name: Twitter
+  title_id: 3
+- question: 玩家能夠使用別人的程式嗎？
+  answer: '是'
+  links:
+  - url: https://twitter.com/#!/notch/status/187450717211066369
+    link_name: Twitter
+  title_id: 3
+- question: 遊戲中只有 DCPU-16 這顆 CPU 嗎？
+  answer: 目前是這樣沒錯。
+  links:
+  - url: https://twitter.com/#!/notch/status/187451454066397184
+    link_name: Twitter
+  title_id: 3
+- question: 你要如何阻擋病毒程式？
+  answer: 我不會擋，玩家得自己想辦法。
+  links:
+  - url: https://twitter.com/#!/notch/status/187474819980328962
+    link_name: Twitter
+  title_id: 3
+- question: 遊戲中模擬的電腦會扮演吃重的角色嗎？沒那麼會寫程式的人能夠玩嗎？
+  answer: 一但遊戲中有程式可用了，玩家就能把他們的遊戲中電腦當成一般電腦用。
+  links:
+  - url: https://twitter.com/#!/notch/status/187475832078483456
+    link_name: Twitter
+  title_id: 3
+- question: DCPU 能夠控制通訊嗎？想像一下 DCPU 分散式處理，P2P，或中央網路，遙控船隻，電子戰...等等
+  answer: 就是這樣！
+  links:
+  - url: https://twitter.com/#!/notch/status/187662131779473409
+    link_name: Twitter
+  title_id: 3
+- question: 一艘船會有一顆以上的 CPU 嗎？
+  answer: 是的，一艘船有三顆 CPU 應該是個合理的數量。
+  links:
+  - url: https://twitter.com/#!/notch/status/187665962177273857
+    link_name: Twitter
+  title_id: 3
+- question: 0x10c 是怎樣的遊戲？
+  answer: 0x10<sup>c</sup> 是一款 Elite-like 的太空模擬遊戲。遊戲中你能夠戰鬥，貿易，打劫，採礦....等等。
+  links:
+  - url: http://0x10c.com/
+    link_name: 0x10c.com
+  title_id: 1
+- question: 背景故事是？
+  answer: <p>在一個太空競賽沒有停止的平行世界中，太空旅行在企業與有錢人中開始流行起來。</p>
+	<p>在 1988 年，一款新的人工睡眠艙問世了。他能與當代熱門的 16-bit 電腦相容。很不幸的是，人工睡眠艙的控制使用 big endian，而 DCPU-16 個規範則使用 little endian。這造成一連串驅動程式的錯誤，原本預定執行 <code>0x0000 0000 0000 0001</code> 年的人工睡眠會持續 <code>0x0001 0000 0000 0000</code> 年之久。</p>
+	<p>現在是西元 281 474 976 712 644 年，而我們的太空迷航者醒來時看到的是個瀕臨滅亡的宇宙。遠方的銀河都因為強大的紅位移（red shift）而消失，星座也已變了樣，巨大黑洞佔據了銀河系。</p>
+  links:
+  - url: http://0x10c.com/
+    link_name: 0x10c.com
+  title_id: 1
+- question: 遊戲中我能做什麼？
+  answer: <ul><li>大量的工程工作</li>
+    <li>全功能的電腦系統</li>
+    <li>與 AI 或其他玩家展開太空戰鬥</li>
+    <li>在廢船上尋寶</li>
+    <li>貼膠帶!</li>
+    <li>無縫降落行星表面</li>
+    <li>先進的經濟系統</li>
+    <li>隨機遭遇戰</li>
+    <li>採礦，貿易，打劫</li>
+    <li>單人或多人連線</li>
+    </ul>
+  links:
+  - url: http://0x10c.com
+    link_name: 0x10c.com
+  title_id: 1
+- question: 價格是？
+  answer: 價格還沒決定，應該會有單人遊戲模式。而線上連線模式會有月費，因為就算你在離線的狀況下還是繼續在模擬船上電腦的執行。
+  links:
+  - url: http://0x10c.com
+    link_name: 0x10c.com
+  title_id: 1
+- question: 啥？要月費？但但但未來是免月費也能玩的時代阿！
+  answer: 「免費玩」是個幌子
+  links:
+  - url: https://twitter.com/#!/notch/status/187298042087604224
+    link_name: Twitter
+  title_id: 1
+- question: 幹嘛這麼早公布要收月費 :'( 我想留在一切都不用錢的夢世界裡面 :'(
+  answer: 早點讓利空出盡
+  links:
+  - url: https://twitter.com/#!/notch/status/187446935106502656
+    link_name: Twitter
+  title_id: 1
+- question: 會有 Minecraft 那樣的 alphy 階段嗎？
+  answer: 會
+  links:
+  - url: https://twitter.com/#!/Capp00/status/187282914386526208
+    link_name: Twitter
+  title_id: 1
+- question: Logo圖案是?
+  answer: 用目前的試做遊戲引擎在遊戲中繪製出來的。
+  links:
+  - url: https://twitter.com/#!/notch/status/187297023429586945
+    link_name: Twitter
+  title_id: 1
+- question: 有可能架設自己的 0x10c 伺服器嗎？還是只有一台巨大的中央主伺服器？
+  answer: 還不知道！
+  links:
+  - url: https://twitter.com/#!/notch/status/187447546329829376
+    link_name: Twitter
+  title_id: 1
+- question: 能夠設計建造自己的船艦嗎？
+  answer: '可以'
+  links:
+  - url: https://twitter.com/#!/notch/status/187453476362657793
+    link_name: Twitter
+  title_id: 1
+- question: 我跟我朋友能夠搭乘同一艘船嗎？
+  answer: '可以'
+  links:
+  - url: https://twitter.com/#!/notch/status/187453524634902528
+    link_name: Twitter
+  title_id: 1
+- question: 這款遊戲適合作為教育用途嗎？
+  answer: 我希望
+  links:
+  - url: https://twitter.com/#!/notch/status/187453888662745088
+    link_name: Twitter
+  title_id: 1
+- question: 遊戲中會有不同種族嗎？如果有的話，他們能夠「親密接觸」嗎？
+  answer: 嗯...從演化的角度來說，不太可能。
+  links:
+  - url: https://twitter.com/#!/notch/status/187460269667123200
+    link_name: Twitter
+  title_id: 1
+- question: 有考慮到船艦的工程部分嗎？像是維修船殼引擎等等。機械維護會不會很難上手？
+  answer: 希望有。而為了遊戲性的考量，會有一小段時間你能用大力膠帶修理任何東西。
+  links:
+  - url: https://twitter.com/#!/notch/status/187461075577470976
+    link_name: Twitter
+  title_id: 1
+- question: 遊戲會有行星表面的部份嗎？
+  answer: 遊戲會有行星表面的部份。
+  links:
+  - url: https://twitter.com/#!/notch/status/187666854800670721
+    link_name: Twitter
+  title_id: 1
+- question: ! '#0x10c 會支援 unicode 嗎？'
+  answer:會，但 DCPU 不支援。
+  links:
+  - url: https://twitter.com/#!/notch/status/187668308043108353
+    link_name: Twitter
+  title_id: 1
+- question: 這款遊戲會是船艦內第一人稱，或是畫面可以縮放到船艦外？
+  answer: 船艦內第一人稱。
+  links:
+  - url: https://twitter.com/#!/notch/status/187451691040382976
+    link_name: Twitter
+  title_id: 2
+- question: 我們會看到即時預算的光學物理嗎？這可是硬科幻遊戲必備的。
+  answer: 如果你指的是黑洞造成的重力透鏡，我希望有。如果跟遊戲的視覺風格能搭的話。
+  links:
+  - url: https://twitter.com/#!/notch/status/187454250547294208
+    link_name: Twitter
+  title_id: 5
+- question: 我是指光線從某艘船艦上面反射，到船艦上的偵測器偵測到的延遲時間。
+  answer: 我會為了遊戲性讓步，我說的硬科學不包含那些不直覺的部分，而不是完全理論正確的。
+  links:
+  - url: https://twitter.com/#!/notch/status/187454898189774848
+    link_name: Twitter
+  title_id: 5
+- question: 所以硬度等級是？2？3？10？
+  answer: 看你是用哪種等級。以<a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/MohsScaleOfScienceFictionHardness">這種</a>來說大概在 4 左右。
+  links:
+  - url: https://twitter.com/#!/notch/status/187456074956279808
+    link_name: Twitter
+  title_id: 5
+- question: 是不是切掉引擎就會在太空中飄，或是繞著行星轉
+  answer: 計畫是這樣
+  links:
+  - url: https://twitter.com/#!/notch/status/187473646267277312
+    link_name: Twitter
+  title_id: 5
+- question: 0x10c 會有像是重力，相對論的計算，行星生態圈...之類的東西嗎？
+  answer: 重力有的，而為了遊戲性我*可能*不會讓時間是相對性的。生態圈...也許...大部分的生物都會死。
+  links:
+  - url: https://twitter.com/#!/notch/status/187842817425543168
+    link_name: Twitter
+  title_id: 5
+- question: 0x10c 裡面會用哪種軟碟片？
+  answer: 目標是 1.44 MB 的三吋半軟碟。
+  links:
+  - url: https://twitter.com/#!/notch/status/187852568318312448
+    link_name: Twitter
+  title_id: 3
+- question: DCPU-16 指定了每個 OP 需要的 cycle，這是表示沒辦法最佳化直譯器嗎？
+  answer: 你可以自己做一個，不過遊戲中的會跟著 cycle 數跑。
+  links:
+  - url: https://twitter.com/#!/notch/status/187900363469373442
+    link_name: Twitter
+  title_id: 6
+- question: 解釋一下「免費玩是個幌子」的意思嗎？
+  answer: Y從名字就是個幌子，遊戲開發者其實賺了更多錢，雖然號稱是免費玩。
+  links:
+  - url: https://twitter.com/#!/notch/status/187901649409421312
+    link_name: Twitter
+  title_id: 1
+- question: 確認一下，「無縫行星降落」是指從太空中降落到行星表面而不會看到載入中畫面？
+  answer: '是'
+  links:
+  - url: https://twitter.com/#!/notch/status/187945752742473728
+    link_name: Twitter
+  title_id: 5
+- question: 遊戲中的死亡機制是？
+  answer: 遊戲中死亡表示你（和你的船）會立即重生。量子永生！你會活在一個完全相同的平行宇宙中，而不是完全沒有死過。
+  links:
+  - url: https://twitter.com/#!/notch/status/188223238164332544
+    link_name: Twitter
+  - url: https://twitter.com/#!/notch/status/188224386032082945
+    link_name: Twitter
+  title_id: 1
+- question: 畫面風格是？像是 EVE 那樣的寫實風格嗎?
+  answer: 畫面會很簡單，非常簡單。遊戲不會有貼圖，你會看到硬板板的多邊型加上現代的打光效果，但沒有貼圖（只有很少的例外）
+  links:
+  - url: https://twitter.com/#!/notch/status/187451321966788608
+    link_name: Twitter
+  - url: https://twitter.com/#!/notch/status/188385652482641920
+    link_name: Twitter
+  title_id: 2
+- question: 所以沒有漂亮的星星跟行星嗎？ :(
+  answer: 星星跟行星很漂亮
+  links:
+  - url: https://twitter.com/#!/notch/status/188386791663996928
+    link_name: Twitter
+  title_id: 2
+- question: 這是視覺風格的決策還是技術決策？
+  answer: 視覺風格，我想抓住那種「這是我們在 80 年代想像的未來世界風」的感覺。此外，Frontier: Elite II 也是這樣。
+  links:
+  - url: https://twitter.com/#!/notch/status/188387333303840768
+    link_name: Twitter
+  - url: https://twitter.com/#!/notch/status/188387929633198080
+    link_name: Twitter
+  title_id: 2
+- question: 但是你的虛擬螢幕要用到貼圖吧。
+  answer: 是的，而且可能還會有某些特效用到。不過大體上看起來會是無貼圖的風格。
+  links:
+  - url: https://twitter.com/#!/notch/status/188388307586134016
+    link_name: Twitter
+  title_id: 2
+- question: 所以不會有 stripes 或是船艦塗樣了？船舷也不會有船名!? :O
+  answer: 當然會有船名跟船艦圖樣，但是都是多邊型。
+  links:
+  - url: https://twitter.com/#!/notch/status/188388455770890240
+    link_name: Twitter
+  title_id: 2
+- question: 你給無貼圖遊戲範例是 Frontier - Elite II，但這款遊戲在行星跟船艦表面有用上貼圖阿（雖然是低解析度的）
+  answer: 是的，行星表面有用一些貼圖，不過我打算用*更多的多邊型*來處理這個問題。
+  links:
+  - url: https://twitter.com/#!/notch/status/188388677586665472
+    link_name: Twitter
+  title_id: 2
+- question: 我在 80 年代中期的 BBCB 電腦上玩過 Elite，遊戲會有 3D 線框模式嗎？
+  answer: 我正在考慮要加入線框模式 ;)
+  links:
+  - url: https://twitter.com/#!/notch/status/188389034945544192
+    link_name: Twitter
+  title_id: 2
+- question: 坦白說...Elite II 看起來滿醜的。
+  answer: 現在看是很醜，不過以當年來說可是超華麗。
+  links:
+  - url: https://twitter.com/#!/notch/status/188389120828121088
+    link_name: Twitter
+  title_id: 2
+- question: Will you be keeping the polycounts around the same as back then or will that be one area you take liberty with?
+  answer: 只要看起來是 low-poly 風格我就滿意了。
+  links:
+  - url: https://twitter.com/#!/notch/status/188389249710690304
+    link_name: Twitter
+  title_id: 2
+- question: 如果我沒弄錯，DCPU 沒有 [SP+literal] 指令? :(
+  answer: 目前沒有
+  links:
+  - url: https://twitter.com/#!/notch/status/188390826404089857
+    link_name: Twitter
+  title_id: 6
+- question: 這顆 CPU 有 LLVM back-end 嗎？
+  answer: 我個人有寫個組譯器給自己用。這東西有些毛病，不過我用的很開心。有些人已經開始動手做 LLVM back-end 了，你可以在 <a href = 'https://github.com/krasin/llvm-dcpu16'>github</a> 上看到他們的進度。
+  links:
+  - url: https://twitter.com/#!/notch/status/187447412015632385
+    link_name: Twitter
+  - url: https://twitter.com/#!/erisdev/status/188807078222114819
+    link_name: Twitter
+  title_id: 6
+- question: 0x10c 會跟 X 系列一樣硬派嗎？
+  answer: 不確定
+  title_id: 1
+  links:
+  - url: https://twitter.com/#!/notch/status/189006563418181632
+    link_name: Twitter
