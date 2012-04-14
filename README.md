@@ -4,11 +4,11 @@ This repository contains the translation for 0x10.cc website
 
 ## data
 
-Data contains yaml file representing the Q&A database.
+The data folder contains yml files representing the Q&A database.
 
 ### Questions representation
 
-A question have the following field :
+A question have the following fields:
 
     - question: My awesome question
       answer: The awesome answer from Notch
@@ -19,8 +19,8 @@ A question have the following field :
       - url: second url
         link_name: name of the second url
 
-You can have as many url and link name you want.
-The title id should be one of the following number:
+You can have as many url and link names as you want.
+The title id should be one of the following numbers:
 
     1: The game
     2: The graphics
@@ -31,22 +31,27 @@ The title id should be one of the following number:
 
 ### Ordering
 
-Currently the database do not have any timestamp on item. Last are recent, and the
+Currently the database does not have any timestamps on the item. Last are more recent, and the
 order in the file is the order on the website.
 
 ### Filename
 
-The database file should be named like this:
+The database files should be named like this:
 
     db_<lang>_question.yml
     db_<lang>_theme.yml
 
 ## locales
 
-Contains yaml file for translating the fixed content of the website.
+Contains yml files for translating the fixed content of the website.
 
 ### Filename
 
-The locales file should be named like this:
+The locales files should be named like this:
 
     <lang>.yml
+
+
+Thank you,
+
+-Mayeu
