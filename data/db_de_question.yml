@@ -1,14 +1,13 @@
 ---
-- question: Exisitert schon ein LLVM back-end für die CPU?
+- question: Existiert schon ein LLVM back-end für die CPU?
   answer: Ich glaube jemand arbeitet daran, haha. Ich habe meinen eigenen kleinen 
     Assembler dazu geschrieben. Er hat seine Eigenarten, aber ich mag ihn trotzdem.
   links:
   - url: https://twitter.com/#!/notch/status/187447412015632385
     link_name: Twitter
   title_id: 6
-- question: Weshalb keine Interrupts? Oder habe ich etwas verpasst?
-  answer: Ich mag keine Interrupts! Versuche stattdessen, es mir wie ein nettes, 
-    kleines Nachrichtensystem vorzustellen.
+- question: Warum gibt es keine Interrupts? Oder habe ich etwas verpasst?
+  answer: Ich mag keine Interrupts! Denk stattdessen lieber an eine kleine Nachrichtenqueue.
   links:
   - url: https://twitter.com/#!/notch/status/187448370107912192
     link_name: Twitter
@@ -19,10 +18,9 @@
   - url: https://twitter.com/#!/notch/status/187448576505413632
     link_name: Twitter
   title_id: 6
-- question: Betreffend den Instruktionen die mehrere Zyklen brauchen, ist es sicher
-    anzunehmen, dass diese vor ihrem letztem Taktzyklus keine Werte anpassen?
+- question: Kann man annehmen, dass Instruktionen, die mehrere Zyklen brauchen, keine Werte vor ihrem letzten Zyklus verändern?
   answer: Für die Effizienz des Emulators lasse ich die Werte schon vor der
-    Abarbeitung der Zyklen anpassen. Diese sind bloss ein Postfix.
+    Abarbeitung der Zyklen anpassen. Die Zyklen sind danach nur ein Postfix.
   links:
   - url: https://twitter.com/#!/notch/status/187449161216573441
     link_name: Twitter
@@ -34,8 +32,8 @@
     link_name: Twitter
   title_id: 6
 - question: Es gibt keine 'ADD with Carry' Instruktion -- zumindest sollte man zuerst
-    'ADD' aufrufen, 'ADC' tut dies imlizit.
-  answer: ADD speichert den carry (Übertrag) in O, es verarbeitet ihn weiter. Du musst es manuell mit DD &lt;dest&gt;, O verwenden.
+    'ADD' aufrufen, 'ADC' tut dies implizit.
+  answer: ADD speichert den Carry (Übertrag) in O, es verarbeitet ihn nicht weiter. Du musst das manuell mit ADD <Ziel>, O machen.
   links:
   - url: https://twitter.com/#!/notch/status/187454603909009408
     link_name: Twitter
@@ -49,30 +47,30 @@
   - url: https://twitter.com/#!/notch/status/187460507979091968
     link_name: Twitter
   title_id: 6
-- question: Kein pipelining in der CPU?
+- question: Kein Pipelining in der CPU?
   answer: Nein, das fehlt zugunsten der Emulationsgeschwindigkeit, damit diese
     so hoch wie möglich sein kann.
   links:
   - url: https://twitter.com/#!/notch/status/187474398243074048
     link_name: Twitter
   title_id: 6
-- question: Was ist in O nach DIV x, 0, wenn es äquivalent ist zu 0x10000 und irgendetwas 
-    Grösserem? Ich würde sagen entweder x (0x10000) oder 0 (infinity).
+- question: Was ist in O nach DIV x, 0, wenn das äquivalent zu 0x10000 und /irgendetwas 
+    Grösserem? Ich würde sagen entweder x (/0x10000) oder 0 (/unendlich).
   answer: 0
   links:
   - url: https://twitter.com/#!/notch/status/187567134824607744
     link_name: Twitter
   title_id: 6
-- question: Die 0x10c-Überlieferung spricht von Little Endian, aber deine Spezifikation
-    beschreibt einen call mit Big Endian.
-  answer: "Well, oops! :D"
+- question: Die 0x10c-Gerüchte sprechen von Little Endian, aber deine Spezifikation
+    beschreibt Aufrufe mit Big Endian.
+  answer: "Ups! :D"
   links:
   - url: https://twitter.com/#!/notch/status/187596789304655874
     link_name: Twitter
   title_id: 6
-- question: Wie läuft der dcpu-16 Bootvorgang? Haben die Register einen bestimmten Wert?
+- question: Wie läuft der DCPU-16 Bootvorgang? Haben die Register einen bestimmten Wert?
     Du deutest an, dass der Stackpointer 0xffff ist...
-  answer: SP beginnt bei 0. Das erste PUSH ist --SP, was 0xFFFF ergibt. Alles andere
+  answer: SP beginnt bei 0. Der erste PUSH ist --SP, was 0xFFFF ergibt. Alles andere
     startet bei 0
   links:
   - url: https://twitter.com/#!/notch/status/187637515941978114
@@ -111,14 +109,14 @@
     link_name: Twitter
   title_id: 4
 - question: Wie werden Programme in den Speicher des DCPU-16 geladen werden können?
-  answer: Jemand wird einen Loader schreiben müssen. ;) Es wird floppy disks im Spiel
-    geben, und auch einen 'radio array'.
+  answer: Jemand wird einen Loader schreiben müssen. ;) Es wird Disketten im Spiel
+    geben, und auch Satellitenschüsseln.
   links:
   - url: https://twitter.com/#!/notch/status/187452068141875200
     link_name: Twitter
   title_id: 4
 - question: Wird es so etwas wie Shops für Programme geben?
-  answer: Absolut. Spieler werden auch ihr eigenes anbieten können.
+  answer: Absolut. Spieler werden auch ihre Programme anbieten können.
   links:
   - url: https://twitter.com/#!/notch/status/187452239344967680
     link_name: Twitter
